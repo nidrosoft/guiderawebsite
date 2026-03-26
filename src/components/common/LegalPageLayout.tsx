@@ -1,5 +1,5 @@
-import HeaderSix from "@/layouts/headers/HeaderSix"
-import FooterFive from "@/layouts/footers/FooterFive"
+import Header from "@/layouts/headers/Header"
+import Footer from "@/layouts/footers/Footer"
 
 interface LegalPageLayoutProps {
    title: string
@@ -10,7 +10,7 @@ interface LegalPageLayoutProps {
 const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps) => {
    return (
       <div className="main-page-wrapper">
-         <HeaderSix />
+         <Header />
          <div className="container" style={{ paddingTop: '160px', paddingBottom: '80px', maxWidth: '800px' }}>
             <h1 style={{ fontSize: '42px', fontWeight: 700, marginBottom: '8px' }}>{title}</h1>
             <p style={{ color: '#888', fontSize: '14px', marginBottom: '40px' }}>Last updated: {lastUpdated}</p>
@@ -18,7 +18,7 @@ const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps)
                {children}
             </div>
          </div>
-         <FooterFive />
+         <Footer />
       </div>
    )
 }

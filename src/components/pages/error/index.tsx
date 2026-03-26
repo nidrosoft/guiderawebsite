@@ -1,10 +1,10 @@
-import HeaderOne from "@/layouts/headers/HeaderOne"
+import Header from "@/layouts/headers/Header"
 import ErrorArea from "./ErrorArea"
 
 const NotFound = () => {
   return (
-    <div className="main-page-wrapper dark-bg p-30">
-      <HeaderOne />
+    <div className="main-page-wrapper">
+      <Header />
       <ErrorArea />
     </div>
   )

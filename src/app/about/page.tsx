@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
-import HeaderSix from "@/layouts/headers/HeaderSix"
-import FooterFive from "@/layouts/footers/FooterFive"
+import Header from "@/layouts/headers/Header"
+import Footer from "@/layouts/footers/Footer"
 
 export const metadata: Metadata = {
    title: "About Us — Guidera",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
    return (
       <div className="main-page-wrapper">
-         <HeaderSix />
+         <Header />
          <div className="container" style={{ paddingTop: '160px', paddingBottom: '80px', maxWidth: '800px' }}>
             <h1 style={{ fontSize: '42px', fontWeight: 700, marginBottom: '24px' }}>About Guidera</h1>
 
@@ -44,7 +44,7 @@ const AboutPage = () => {
                We&apos;re currently in pre-launch with over 10,000 travelers on our waitlist. Guidera launches in 2026. Join us and be among the first to experience the future of travel.
             </p>
          </div>
-         <FooterFive />
+         <Footer />
       </div>
    )
 }
