@@ -401,7 +401,7 @@ Safety           Press Kit        Cookies
 Blog             Contact          GDPR
 
 ─────────────────────────────────────────────────────────────────────
-© 2025 Guidera Inc. All rights reserved.        Made with ❤️ for travelers
+© 2025 Guidera Inc. All rights reserved.        Made with ❤️ for travelers by Cyriac Zeh (link to https://www.linkedin.com/in/cyriac-zeh/)
 ```
 
 - Dark background
