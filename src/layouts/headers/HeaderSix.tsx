@@ -52,7 +52,7 @@ const HeaderSix = () => {
                            <li className="d-block d-lg-none"><div className="logo"><Link href="/" className="d-block"><Image src={logo_1} alt="" /></Link></div></li>
                            {navLinks.map((item) => (
                               <li key={item.label} className="nav-item">
-                                 <a href={item.href} className="nav-link">{item.label}</a>
+                                 <Link href={item.href} className="nav-link">{item.label}</Link>
                               </li>
                            ))}
                         </ul>

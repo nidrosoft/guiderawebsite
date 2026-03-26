@@ -42,10 +42,10 @@ const FooterFive = () => {
                 <div className="footer-nav mb-20">
                   <h6 className="footer-title" style={{ fontSize: '15px', fontWeight: 700, marginBottom: '12px' }}>Product</h6>
                   <ul className="footer-nav-link style-none">
-                    <li><a href="/#features">Features</a></li>
-                    <li><a href="/#pricing">Pricing</a></li>
-                    <li><a href="/#how-it-works">How It Works</a></li>
-                    <li><a href="/#faq">FAQ</a></li>
+                    <li><Link href="/#features">Features</Link></li>
+                    <li><Link href="/#pricing">Pricing</Link></li>
+                    <li><Link href="/#how-it-works">How It Works</Link></li>
+                    <li><Link href="/#faq">FAQ</Link></li>
                   </ul>
                 </div>
               </div>
