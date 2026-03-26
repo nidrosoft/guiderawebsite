@@ -19,6 +19,7 @@ const HeaderSix = () => {
 
    const { sticky } = UseSticky();
    const [showModal, setShowModal] = useState(false);
+   const [menuOpen, setMenuOpen] = useState(false);
 
    return (
       <>
@@ -33,26 +34,44 @@ const HeaderSix = () => {
                   </div>
                   <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
                      <ul className="d-flex align-items-center style-none">
-                        <li className="d-md-inline-block">
-                           <button className="download-btn-one" onClick={() => setShowModal(true)} style={{ display: 'inline-block', cursor: 'pointer', background: 'none' }}>
+                        <li>
+                           <button
+                              onClick={() => setShowModal(true)}
+                              style={{
+                                 display: 'inline-block',
+                                 cursor: 'pointer',
+                                 background: '#000',
+                                 color: '#fff',
+                                 border: 'none',
+                                 borderRadius: '60px',
+                                 padding: '10px 24px',
+                                 fontSize: '15px',
+                                 fontWeight: 600,
+                                 transition: 'background 0.2s ease, transform 0.2s ease',
+                              }}
+                              onMouseEnter={(e) => { e.currentTarget.style.background = '#333' }}
+                              onMouseLeave={(e) => { e.currentTarget.style.background = '#000' }}
+                           >
                               Join the Waitlist
-                              <style>{`.download-btn-one:after { display: none !important; }`}</style>
                            </button>
                         </li>
                      </ul>
                   </div>
                   <nav className="navbar navbar-expand-lg p0 order-lg-2">
-                     <button className="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                     <button
+                        className="navbar-toggler d-block d-lg-none"
+                        type="button"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label="Toggle navigation"
+                     >
                         <span></span>
                      </button>
-                     <div className="collapse navbar-collapse" id="navbarNav">
+                     <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
                         <ul className="navbar-nav align-items-lg-center">
                            <li className="d-block d-lg-none"><div className="logo"><Link href="/" className="d-block"><Image src={logo_1} alt="" /></Link></div></li>
                            {navLinks.map((item) => (
                               <li key={item.label} className="nav-item">
-                                 <Link href={item.href} className="nav-link">{item.label}</Link>
+                                 <Link href={item.href} className="nav-link" onClick={() => setMenuOpen(false)}>{item.label}</Link>
                               </li>
                            ))}
                         </ul>

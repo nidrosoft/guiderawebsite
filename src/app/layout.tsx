@@ -1,5 +1,6 @@
 import "../styles/index.scss";
 import "../../public/assets/css/responsive.css";
+import "../../public/assets/css/responsive-custom.css";
 
 export default function RootLayout({
   children,

@@ -16,7 +16,7 @@ const Solution = () => {
    return (
       <>
       <div
-         className="border-30"
+         className="border-30 solution-section-wrapper"
          style={{
             background: '#00574A',
             padding: '120px 0',
@@ -56,6 +56,7 @@ const Solution = () => {
 
             {/* Headline */}
             <h2
+               className="solution-section-heading"
                style={{
                   textAlign: 'center',
                   color: '#fff',
@@ -72,6 +73,7 @@ const Solution = () => {
 
             {/* Body */}
             <p
+               className="solution-section-body"
                style={{
                   textAlign: 'center',
                   color: 'rgba(255,255,255,0.7)',
@@ -89,6 +91,7 @@ const Solution = () => {
 
             {/* Checkmarks grid */}
             <div
+               className="solution-checkmarks-grid"
                style={{
                   maxWidth: '640px',
                   margin: '0 auto',

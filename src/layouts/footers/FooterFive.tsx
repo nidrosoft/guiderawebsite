@@ -2,7 +2,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import icon_1 from "@/assets/images/icon/icon_34.svg"
 import logo from "@/assets/images/logo/guideralogo.png"
 import shape_1 from "@/assets/images/assets/bg_12.png"
 import shape_2 from "@/assets/images/shape/shape_56.svg"
@@ -14,20 +13,6 @@ const FooterFive = () => {
       <div className="wrapper">
         <div className="container">
           <div className="position-relative">
-            <div className="newsletter">
-              <div className="row">
-                <div className="col-xl-6 col-lg-5 col-md-6">
-                  <h3 className="sm-mb-40">Stay updated on Guidera</h3>
-                </div>
-                <div className="col-md-6 ms-auto">
-                  <form onSubmit={(e) => e.preventDefault()} className="position-relative">
-                    <h6>Newsletter</h6>
-                    <input type="email" placeholder="you@email.com" />
-                    <button className="tran3s"><Image src={icon_1} alt="" className="m-auto" /></button>
-                  </form>
-                </div>
-              </div>
-            </div>
             <div className="row">
               <div className="col-xl-3 me-auto">
                 <div className="footer-intro mb-30">
@@ -54,6 +39,9 @@ const FooterFive = () => {
                   <h6 className="footer-title" style={{ fontSize: '15px', fontWeight: 700, marginBottom: '12px' }}>Company</h6>
                   <ul className="footer-nav-link style-none">
                     <li><Link href="/about">About Us</Link></li>
+                    <li><a href="mailto:hello@guidera.app">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
                   </ul>
                 </div>
               </div>

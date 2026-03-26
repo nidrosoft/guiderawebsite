@@ -58,11 +58,20 @@ const BlockFeatureTwo = () => {
    const activeIndexRef = useRef(0);
    const fixedModeRef = useRef<'before' | 'fixed' | 'after'>('before');
    const [, forceRender] = useState(0);
+   const [isMobile, setIsMobile] = useState(false);
 
    // Use refs for layout values that don't need to trigger re-renders
    const layoutRef = useRef({ sectionLeft: 0, sectionWidth: 0, pinnedTop: 0, sectionOffsetTop: 0, sectionHeight: 0 });
 
    useEffect(() => {
+      const checkMobile = () => setIsMobile(window.innerWidth < 992);
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+      return () => window.removeEventListener('resize', checkMobile);
+   }, []);
+
+   useEffect(() => {
+      if (isMobile) return;
       const section = sectionRef.current;
       if (!section) return;
 
@@ -120,7 +129,7 @@ const BlockFeatureTwo = () => {
          window.removeEventListener('scroll', handleScroll);
          window.removeEventListener('resize', handleResize);
       };
-   }, []);
+   }, [isMobile]);
 
    const fixedMode = fixedModeRef.current;
    const activeIndex = activeIndexRef.current;
@@ -151,6 +160,60 @@ const BlockFeatureTwo = () => {
                  width: '100%',
                  height: '100vh',
               };
+
+   if (isMobile) {
+      return (
+         <div style={{ marginTop: '60px' }}>
+            <div className="container">
+               {features.map((feature, idx) => (
+                  <div key={idx} style={{ marginBottom: '30px' }}>
+                     <div
+                        className="block-feature-two-card"
+                        style={{
+                           width: '100%',
+                           background: '#F7F7F7',
+                           borderRadius: '24px',
+                           padding: '30px 20px',
+                           boxShadow: '0 10px 40px rgba(0, 0, 0, 0.06)',
+                        }}
+                     >
+                        <div style={{ fontSize: '40px', marginBottom: '12px' }}>{feature.emoji}</div>
+                        <h3 style={{ fontSize: '26px', lineHeight: '1.2em', fontWeight: 700, marginBottom: '12px' }}>{feature.title}</h3>
+                        <p style={{ fontSize: '16px', paddingBottom: '12px', color: '#555', lineHeight: 1.6 }}>{feature.desc}</p>
+                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px' }}>
+                           {feature.bullets.map((bullet, bIdx) => (
+                              <li key={bIdx} style={{
+                                 fontSize: '15px',
+                                 padding: '5px 0',
+                                 color: '#333',
+                                 display: 'flex',
+                                 alignItems: 'center',
+                                 gap: '10px',
+                              }}>
+                                 <span style={{
+                                    width: '20px',
+                                    height: '20px',
+                                    borderRadius: '50%',
+                                    background: '#3FC39E',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: '#fff',
+                                    fontSize: '12px',
+                                    flexShrink: 0,
+                                 }}>✓</span>
+                                 {bullet}
+                              </li>
+                           ))}
+                        </ul>
+                        <Image src={feature.img} alt={feature.title} style={{ width: '100%', height: 'auto', borderRadius: '16px' }} />
+                     </div>
+                  </div>
+               ))}
+            </div>
+         </div>
+      );
+   }
 
    return (
       <div

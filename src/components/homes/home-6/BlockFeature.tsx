@@ -106,7 +106,7 @@ const BlockFeature = () => {
                   >
                      Core Features
                   </div>
-                  <h2 style={{ fontSize: '48px', fontWeight: 700, lineHeight: 1.2, marginBottom: '16px' }}>
+                  <h2 className="block-feature-section-heading" style={{ fontSize: '48px', fontWeight: 700, lineHeight: 1.2, marginBottom: '16px' }}>
                      See Guidera in action
                   </h2>
                   <p style={{ fontSize: '18px', color: '#6B7280', maxWidth: '560px', margin: '0 auto 50px' }}>
@@ -117,6 +117,7 @@ const BlockFeature = () => {
 
             {/* Tab Navigation */}
             <div
+               className="block-feature-tab-nav"
                style={{
                   display: 'flex',
                   justifyContent: 'center',
@@ -152,6 +153,7 @@ const BlockFeature = () => {
 
             {/* Content: Phone + Feature Details */}
             <div
+               className="block-feature-content-card"
                style={{
                   background: '#F9FAFB',
                   borderRadius: '32px',

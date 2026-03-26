@@ -2,7 +2,6 @@ import Image from 'next/image'
 
 import img_1 from "@/assets/images/shape/shape_51.svg"
 import img_2 from "@/assets/images/shape/shape_52.svg"
-import img_3 from "@/assets/images/shape/shape_53.svg"
 
 const FancyBanner = () => {
    return (
@@ -40,7 +39,6 @@ const FancyBanner = () => {
          </div>
          <Image src={img_1} alt="" className="shapes shape_01" />
          <Image src={img_2} alt="" className="shapes shape_02" />
-         <Image src={img_3} alt="" className="shapes shape_03" />
       </div>
    )
 }

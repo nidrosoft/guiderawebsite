@@ -1,8 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import Link from "next/link"
-import WaitlistModal from "@/components/common/WaitlistModal"
+import ComingSoonModal from "@/components/common/ComingSoonModal"
 
 import heroPhone from "@/assets/images/assets/guidera_hero_phone.png"
 import avatarImg from "@/assets/images/assets/avatar.png"
@@ -35,7 +34,7 @@ const tealDot: React.CSSProperties = {
 }
 
 const Hero = () => {
-   const [showModal, setShowModal] = useState(false)
+   const [showComingSoon, setShowComingSoon] = useState(false)
    const [phoneLoaded, setPhoneLoaded] = useState(false)
 
    useEffect(() => {
@@ -54,21 +53,20 @@ const Hero = () => {
                      <p className="fs-24 pt-35 pb-20 pe-xxl-5">Guidera runs on a next-generation travel engine — purpose-built, trained on billions of real-world travel signals. It handles your entire trip: a personalized day-by-day itinerary, cultural insights, real-time safety alerts, and a packing list that adapts to your profession, your health, and the forecast.</p>
 
                      <div className="d-flex align-items-center flex-wrap platform-button-group" style={{ gap: '10px' }}>
-                        <button onClick={() => setShowModal(true)} className="btn-seven color-two mt-10" style={{ border: 'none', cursor: 'pointer' }}>Join 10,000+ on the Waitlist</button>
-                        <Link href="/" className="d-flex align-items-center ios-button mt-10" style={{ width: '155px', height: '48px', padding: '0 12px', margin: 0, fontSize: '16px' }}>
-                           <Image src={appleIcon} alt="" className="icon" style={{ marginRight: '10px' }} />
+                        <button onClick={() => setShowComingSoon(true)} className="d-flex align-items-center ios-button mt-10" style={{ cursor: 'pointer' }}>
+                           <Image src={appleIcon} alt="" className="icon" />
                            <div>
                               <span>Download on the</span>
                               <strong>App Store</strong>
                            </div>
-                        </Link>
-                        <Link href="/" className="d-flex align-items-center windows-button mt-10" style={{ width: '155px', height: '48px', padding: '0 12px', margin: 0, fontSize: '16px' }}>
-                           <Image src={playstoreIcon} alt="" className="icon" style={{ marginRight: '10px' }} />
+                        </button>
+                        <button onClick={() => setShowComingSoon(true)} className="d-flex align-items-center windows-button mt-10" style={{ cursor: 'pointer' }}>
+                           <Image src={playstoreIcon} alt="" className="icon" />
                            <div>
                               <span>Get it on</span>
                               <strong>Google Play</strong>
                            </div>
-                        </Link>
+                        </button>
                      </div>
 
                      <div className="d-flex align-items-center mt-75 md-mt-40">
@@ -88,30 +86,30 @@ const Hero = () => {
             }}>
                <Image src={heroPhone} alt="Guidera App" className="w-100" style={{ maxWidth: '680px', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
 
-               {/* Floating travel widgets */}
-               <div style={{ ...floatingWidgetStyle, top: '12%', left: '-14%', animation: 'jumpTwo 4s infinite linear' }}>
+               {/* Floating travel widgets - hidden on mobile via CSS */}
+               <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, top: '12%', left: '-14%', animation: 'jumpTwo 4s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>✈️</span>
                   <span>Flight Tracked</span>
                   <span style={tealDot}></span>
                </div>
 
-               <div style={{ ...floatingWidgetStyle, top: '42%', left: '-16%', animation: 'jumpThree 5s infinite linear' }}>
+               <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, top: '42%', left: '-16%', animation: 'jumpThree 5s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>🧳</span>
                   <span>Packing List Ready</span>
                </div>
 
-               <div style={{ ...floatingWidgetStyle, top: '12%', right: '8%', animation: 'jumpTwo 6s infinite linear' }}>
+               <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, top: '12%', right: '8%', animation: 'jumpTwo 6s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>🌍</span>
                   <span>127 Countries</span>
                </div>
 
-               <div style={{ ...floatingWidgetStyle, bottom: '30%', right: '3%', animation: 'jumpThree 4.5s infinite linear' }}>
+               <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, bottom: '30%', right: '3%', animation: 'jumpThree 4.5s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>🛡️</span>
                   <span>Safety Alerts On</span>
                   <span style={{ ...tealDot, background: '#3FC39E' }}></span>
                </div>
 
-               <div style={{ ...floatingWidgetStyle, bottom: '15%', left: '-10%', animation: 'jumpTwo 5.5s infinite linear' }}>
+               <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, bottom: '15%', left: '-10%', animation: 'jumpTwo 5.5s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>📅</span>
                   <span>AI Itinerary</span>
                   <span style={{ color: '#3FC39E', fontWeight: 700 }}>Generated</span>
@@ -120,7 +118,7 @@ const Hero = () => {
             <Image src={img_6} alt="" className="shapes bg-shape" />
          </div>
       </div>
-      <WaitlistModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      <ComingSoonModal isOpen={showComingSoon} onClose={() => setShowComingSoon(false)} />
       </>
    )
 }

@@ -28,6 +28,7 @@ const HowItWorks = () => {
    return (
       <>
       <div
+         className="how-it-works-wrapper"
          style={{
             background: '#fff',
             padding: '120px 0 100px',
@@ -51,6 +52,7 @@ const HowItWorks = () => {
 
             {/* Headline */}
             <h2
+               className="how-it-works-heading"
                style={{
                   textAlign: 'center',
                   fontSize: '48px',

@@ -39,7 +39,7 @@ const painCards = [
 const Problem = () => {
    return (
       <div
-         className="bg-one border-30"
+         className="bg-one border-30 problem-section-wrapper"
          style={{
             padding: '120px 0 100px',
             marginTop: '30px',
@@ -63,6 +63,7 @@ const Problem = () => {
 
             {/* Headline */}
             <h2
+               className="problem-section-heading"
                style={{
                   textAlign: 'center',
                   color: '#111',
@@ -146,6 +147,7 @@ const Problem = () => {
 
             {/* Transition text */}
             <p
+               className="problem-transition-text"
                style={{
                   textAlign: 'center',
                   marginTop: '60px',
