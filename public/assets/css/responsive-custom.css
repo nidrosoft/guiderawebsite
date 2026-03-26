@@ -121,7 +121,29 @@ html {
 }
 
 /* ---- HERO SECTION ---- */
-@media (max-width: 991px) {
+/* Tablet: push phone right so text isn't covered */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-banner-six .illustration {
+    right: -8% !important;
+    max-width: 48% !important;
+    top: 18% !important;
+  }
+  .hero-banner-six .col-md-7 {
+    width: 58.333% !important;
+    flex: 0 0 58.333% !important;
+    max-width: 58.333% !important;
+  }
+  .hero-banner-six .hero-heading {
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+  }
+  .hero-banner-six .fs-24 {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+}
+/* Mobile: stack illustration below text */
+@media (max-width: 767px) {
   .hero-banner-six .hero-heading {
     font-size: 36px !important;
     line-height: 1.15 !important;
