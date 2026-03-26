@@ -185,11 +185,11 @@ html {
     order: 3;
     margin: 10px 0 20px;
     text-align: center;
-    padding-left: 120px;
+    padding-left: 80px;
   }
   .hero-banner-six .hero-mobile-phone img {
-    max-width: 340px !important;
-    width: 90% !important;
+    max-width: 480px !important;
+    width: 110% !important;
   }
   .hero-banner-six .hero-buttons {
     order: 4;
@@ -220,6 +220,9 @@ html {
     padding: 0 10px 0 14px !important;
     height: 48px !important;
     font-size: 15px !important;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto !important;
   }
   .hero-banner-six .platform-button-group .ios-button .icon,
   .hero-banner-six .platform-button-group .windows-button .icon {

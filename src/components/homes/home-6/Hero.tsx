@@ -36,10 +36,12 @@ const tealDot: React.CSSProperties = {
 const Hero = () => {
    const [showComingSoon, setShowComingSoon] = useState(false)
    const [phoneLoaded, setPhoneLoaded] = useState(false)
+   const [animReady, setAnimReady] = useState(false)
 
    useEffect(() => {
       const timer = setTimeout(() => setPhoneLoaded(true), 100)
-      return () => clearTimeout(timer)
+      const animTimer = setTimeout(() => setAnimReady(true), 200)
+      return () => { clearTimeout(timer); clearTimeout(animTimer) }
    }, [])
 
    return (
@@ -49,23 +51,40 @@ const Hero = () => {
             <div className="container">
                <div className="row">
                   <div className="col-lg-6 col-md-7 hero-content-col">
-                     <h1 className="hero-heading pe-xxl-5">Your entire trip<br className="d-md-none" /> <span>before you even</span><br className="d-md-none" /> plan it.</h1>
-                     <p className="hero-description fs-24 pt-35 pb-20 pe-xxl-5">Guidera runs on a next generation travel engine  purpose built, trained on billions of real world travel signals. It handles your entire trip: a personalized day-by-day itinerary, cultural insights, real-time safety alerts, and a packing list that adapts to your profession, your health, and the forecast.</p>
+                     <h1 className="hero-heading pe-xxl-5" style={{
+                        opacity: animReady ? 1 : 0,
+                        transform: animReady ? 'translateY(0)' : 'translateY(30px)',
+                        transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
+                     }}>Your entire trip<br className="d-md-none" /> <span>before you even</span><br className="d-md-none" /> plan it.</h1>
+                     <p className="hero-description fs-24 pt-35 pb-20 pe-xxl-5" style={{
+                        opacity: animReady ? 1 : 0,
+                        transform: animReady ? 'translateY(0)' : 'translateY(30px)',
+                        transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s',
+                     }}>Guidera runs on a next generation travel engine  purpose built, trained on billions of real world travel signals. It handles your entire trip: a personalized day-by-day itinerary, cultural insights, real-time safety alerts, and a packing list that adapts to your profession, your health, and the forecast.</p>
 
                      {/* Phone illustration inline for mobile ordering */}
-                     <div className="hero-mobile-phone d-md-none">
-                        <Image src={heroPhone} alt="Guidera App" style={{ width: '90%', maxWidth: '340px', height: 'auto', margin: '0 auto', display: 'block' }} />
+                     <div className="hero-mobile-phone d-md-none" style={{
+                        opacity: animReady ? 1 : 0,
+                        transform: animReady ? 'scale(1) translateY(0)' : 'scale(0.7) translateY(60px)',
+                        transition: 'opacity 1s ease-out 0.5s, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s',
+                     }}>
+                        <Image src={heroPhone} alt="Guidera App" style={{ width: '95%', maxWidth: '380px', height: 'auto', margin: '0 auto', display: 'block' }} />
                      </div>
 
-                     <div className="d-flex align-items-center flex-wrap platform-button-group hero-buttons" style={{ gap: '10px' }}>
-                        <button onClick={() => setShowComingSoon(true)} className="d-flex align-items-center ios-button mt-10" style={{ cursor: 'pointer' }}>
+                     <div className="d-flex align-items-center flex-wrap platform-button-group hero-buttons" style={{
+                        gap: '10px',
+                        opacity: animReady ? 1 : 0,
+                        transform: animReady ? 'translateY(0)' : 'translateY(20px)',
+                        transition: 'opacity 0.8s ease-out 0.9s, transform 0.8s ease-out 0.9s',
+                     }}>
+                        <button type="button" onClick={() => setShowComingSoon(true)} className="d-flex align-items-center ios-button mt-10" style={{ cursor: 'pointer' }}>
                            <Image src={appleIcon} alt="" className="icon" />
                            <div>
                               <span>Download on the</span>
                               <strong>App Store</strong>
                            </div>
                         </button>
-                        <button onClick={() => setShowComingSoon(true)} className="d-flex align-items-center windows-button mt-10" style={{ cursor: 'pointer' }}>
+                        <button type="button" onClick={() => setShowComingSoon(true)} className="d-flex align-items-center windows-button mt-10" style={{ cursor: 'pointer' }}>
                            <Image src={playstoreIcon} alt="" className="icon" />
                            <div>
                               <span>Get it on</span>
@@ -74,7 +93,11 @@ const Hero = () => {
                         </button>
                      </div>
 
-                     <div className="d-flex align-items-center hero-traveler-count mt-75 md-mt-40">
+                     <div className="d-flex align-items-center hero-traveler-count mt-75 md-mt-40" style={{
+                        opacity: animReady ? 1 : 0,
+                        transform: animReady ? 'translateY(0)' : 'translateY(20px)',
+                        transition: 'opacity 0.8s ease-out 1.1s, transform 0.8s ease-out 1.1s',
+                     }}>
                         <Image src={avatarImg} alt="Waitlist members" />
                         <div className="rating">
                            <div className="fw-500 text-dark fs-20">&#10022; 10,847 travelers already waiting &middot; Launching 2026</div>
