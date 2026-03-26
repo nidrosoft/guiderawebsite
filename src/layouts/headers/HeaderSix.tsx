@@ -38,12 +38,14 @@ const HeaderSix = () => {
                            <button
                               onClick={() => setShowModal(true)}
                               style={{
-                                 display: 'inline-block',
+                                 display: 'inline-flex',
+                                 alignItems: 'center',
+                                 gap: '8px',
                                  cursor: 'pointer',
                                  background: '#000',
                                  color: '#fff',
                                  border: 'none',
-                                 borderRadius: '60px',
+                                 borderRadius: '12px',
                                  padding: '10px 24px',
                                  fontSize: '15px',
                                  fontWeight: 600,
@@ -52,6 +54,7 @@ const HeaderSix = () => {
                               onMouseEnter={(e) => { e.currentTarget.style.background = '#333' }}
                               onMouseLeave={(e) => { e.currentTarget.style.background = '#000' }}
                            >
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                               Join the Waitlist
                            </button>
                         </li>

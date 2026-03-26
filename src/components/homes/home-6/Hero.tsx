@@ -48,11 +48,16 @@ const Hero = () => {
          <div className="wrapper position-relative z-1 pt-250 xl-pt-200 md-pt-150 pb-180 xl-pb-100 lg-pb-50">
             <div className="container">
                <div className="row">
-                  <div className="col-lg-6 col-md-7">
-                     <h1 className="hero-heading pe-xxl-5">Your trip, <span>before you even</span> plan it.</h1>
-                     <p className="fs-24 pt-35 pb-20 pe-xxl-5">Guidera runs on a next-generation travel engine — purpose-built, trained on billions of real-world travel signals. It handles your entire trip: a personalized day-by-day itinerary, cultural insights, real-time safety alerts, and a packing list that adapts to your profession, your health, and the forecast.</p>
+                  <div className="col-lg-6 col-md-7 hero-content-col">
+                     <h1 className="hero-heading pe-xxl-5">Your entire trip<br className="d-md-none" /> <span>before you even</span><br className="d-md-none" /> plan it.</h1>
+                     <p className="hero-description fs-24 pt-35 pb-20 pe-xxl-5">Guidera runs on a next generation travel engine  purpose built, trained on billions of real world travel signals. It handles your entire trip: a personalized day-by-day itinerary, cultural insights, real-time safety alerts, and a packing list that adapts to your profession, your health, and the forecast.</p>
 
-                     <div className="d-flex align-items-center flex-wrap platform-button-group" style={{ gap: '10px' }}>
+                     {/* Phone illustration inline for mobile ordering */}
+                     <div className="hero-mobile-phone d-md-none">
+                        <Image src={heroPhone} alt="Guidera App" style={{ width: '90%', maxWidth: '340px', height: 'auto', margin: '0 auto', display: 'block' }} />
+                     </div>
+
+                     <div className="d-flex align-items-center flex-wrap platform-button-group hero-buttons" style={{ gap: '10px' }}>
                         <button onClick={() => setShowComingSoon(true)} className="d-flex align-items-center ios-button mt-10" style={{ cursor: 'pointer' }}>
                            <Image src={appleIcon} alt="" className="icon" />
                            <div>
@@ -69,7 +74,7 @@ const Hero = () => {
                         </button>
                      </div>
 
-                     <div className="d-flex align-items-center mt-75 md-mt-40">
+                     <div className="d-flex align-items-center hero-traveler-count mt-75 md-mt-40">
                         <Image src={avatarImg} alt="Waitlist members" />
                         <div className="rating">
                            <div className="fw-500 text-dark fs-20">&#10022; 10,847 travelers already waiting &middot; Launching 2026</div>

@@ -10,6 +10,25 @@ html {
 
 /* ---- HEADER ---- */
 @media (max-width: 991px) {
+  .theme-main-menu.menu-style-seven .navbar-toggler {
+    background: #000 !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important;
+  }
+  .theme-main-menu.menu-style-seven .navbar-toggler::before,
+  .theme-main-menu.menu-style-seven .navbar-toggler::after,
+  .theme-main-menu.menu-style-seven .navbar-toggler span {
+    background: #fff !important;
+    left: 10px !important;
+    width: 22px !important;
+  }
+}
+/* Hide hamburger menu on mobile phones, keep only Join the Waitlist */
+@media (max-width: 767px) {
+  .theme-main-menu .navbar-toggler {
+    display: none !important;
+  }
   .menu-style-seven .navbar-collapse {
     background: #fff;
     padding: 20px;
@@ -142,61 +161,88 @@ html {
     line-height: 1.55 !important;
   }
 }
-/* Mobile: stack illustration below text */
+/* Mobile: reorder and center hero content */
 @media (max-width: 767px) {
+  .hero-banner-six .hero-content-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
   .hero-banner-six .hero-heading {
-    font-size: 36px !important;
+    font-size: 46px !important;
     line-height: 1.15 !important;
+    text-align: center !important;
+    order: 1;
   }
-  .hero-banner-six .fs-24 {
-    font-size: 17px !important;
+  .hero-banner-six .hero-description {
+    font-size: 16px !important;
     line-height: 1.6 !important;
+    text-align: center !important;
+    padding-right: 0 !important;
+    order: 2;
   }
-  .hero-banner-six .illustration {
-    position: relative !important;
-    right: auto !important;
-    top: auto !important;
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 30px auto 0;
-    display: flex;
-    justify-content: center;
+  .hero-banner-six .hero-mobile-phone {
+    order: 3;
+    margin: 10px 0 20px;
+    text-align: center;
+    padding-left: 120px;
   }
-  .hero-banner-six .illustration img {
-    max-width: 300px !important;
+  .hero-banner-six .hero-mobile-phone img {
+    max-width: 340px !important;
+    width: 90% !important;
+  }
+  .hero-banner-six .hero-buttons {
+    order: 4;
+  }
+  .hero-banner-six .hero-traveler-count {
+    order: 5;
+    justify-content: center !important;
   }
   .hero-banner-six .col-md-7 {
     width: 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .hero-banner-six .floating-widget-mobile-hide {
+  /* Hide the desktop absolute-positioned illustration on mobile */
+  .hero-banner-six .illustration {
     display: none !important;
   }
-}
-
-@media (max-width: 575px) {
-  .hero-banner-six .hero-heading {
-    font-size: 28px !important;
+  .hero-banner-six .platform-button-group {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
   }
-  .hero-banner-six .fs-24 {
+  .hero-banner-six .platform-button-group .ios-button,
+  .hero-banner-six .platform-button-group .windows-button {
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 0 10px 0 14px !important;
+    height: 48px !important;
     font-size: 15px !important;
   }
-  .hero-banner-six .illustration img {
-    max-width: 240px !important;
+  .hero-banner-six .platform-button-group .ios-button .icon,
+  .hero-banner-six .platform-button-group .windows-button .icon {
+    margin-right: 8px !important;
+    width: 20px !important;
+    height: 20px !important;
   }
-  .hero-banner-six .platform-button-group {
-    flex-direction: column !important;
-    align-items: stretch !important;
+  .hero-banner-six .platform-button-group .ios-button span,
+  .hero-banner-six .platform-button-group .windows-button span {
+    font-size: 10px !important;
   }
-  .hero-banner-six .platform-button-group .btn-seven,
-  .hero-banner-six .platform-button-group a.ios-button,
-  .hero-banner-six .platform-button-group a.windows-button {
-    width: 100% !important;
-    justify-content: center;
+  .hero-banner-six .platform-button-group .ios-button strong,
+  .hero-banner-six .platform-button-group .windows-button strong {
+    font-size: 14px !important;
   }
   .hero-banner-six .rating .fw-500 {
-    font-size: 15px !important;
+    font-size: 14px !important;
+  }
+  .hero-banner-six .shapes.bg-shape {
+    display: none !important;
+  }
+  .hero-banner-six .floating-widget-mobile-hide {
+    display: none !important;
   }
 }
 
