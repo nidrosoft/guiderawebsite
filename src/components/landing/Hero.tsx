@@ -55,7 +55,7 @@ const Hero = () => {
                         opacity: animReady ? 1 : 0,
                         transform: animReady ? 'translateY(0)' : 'translateY(30px)',
                         transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
-                     }}>Your entire trip<br className="d-md-none" /> <span>before you even</span><br className="d-md-none" /> plan it.</h1>
+                     }}>Your entire trip <span>before you even</span> plan it.</h1>
                      <p className="hero-description fs-24 pt-35 pb-20 pe-xxl-5" style={{
                         opacity: animReady ? 1 : 0,
                         transform: animReady ? 'translateY(0)' : 'translateY(30px)',

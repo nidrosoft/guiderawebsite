@@ -39,8 +39,8 @@ const Footer = () => {
                   <h6 className="footer-title" style={{ fontSize: '15px', fontWeight: 700, marginBottom: '12px' }}>Company</h6>
                   <ul className="footer-nav-link style-none">
                     <li><Link href="/about">About Us</Link></li>
+                    <li><Link href="/our-story">Our Story</Link></li>
                     <li><a href="mailto:hello@guidera.app">Contact</a></li>
-                    <li><a href="#">Careers</a></li>
                     <li><a href="#">Press</a></li>
                   </ul>
                 </div>
@@ -49,9 +49,9 @@ const Footer = () => {
                 <div className="footer-nav mb-20">
                   <h6 className="footer-title" style={{ fontSize: '15px', fontWeight: 700, marginBottom: '12px' }}>Legal</h6>
                   <ul className="footer-nav-link style-none">
-                    <li><Link href="/privacy">Privacy</Link></li>
-                    <li><Link href="/terms">Terms</Link></li>
-                    <li><Link href="/cookies">Cookies</Link></li>
+                    <li><Link href="/privacy">Privacy Policy</Link></li>
+                    <li><Link href="/terms">Terms of Service</Link></li>
+                    <li><Link href="/community-guidelines">Community Guidelines</Link></li>
                     <li><Link href="/gdpr">GDPR</Link></li>
                   </ul>
                 </div>

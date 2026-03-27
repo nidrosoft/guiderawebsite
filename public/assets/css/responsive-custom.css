@@ -140,25 +140,60 @@ html {
 }
 
 /* ---- HERO SECTION ---- */
-/* Tablet: push phone right so text isn't covered */
+/* Small tablet (768-991): text column full-width, phone pushed far right */
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-banner-six .illustration {
-    right: -8% !important;
-    max-width: 48% !important;
-    top: 18% !important;
+    right: -30% !important;
+    max-width: 38% !important;
+    top: 10% !important;
   }
   .hero-banner-six .col-md-7 {
-    width: 58.333% !important;
-    flex: 0 0 58.333% !important;
-    max-width: 58.333% !important;
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
   .hero-banner-six .hero-heading {
-    font-size: 36px !important;
-    line-height: 1.15 !important;
+    font-size: 52px !important;
+    line-height: 1.08 !important;
+    letter-spacing: -2px !important;
+    max-width: 55% !important;
+  }
+  .hero-banner-six .hero-description {
+    max-width: 55% !important;
   }
   .hero-banner-six .fs-24 {
     font-size: 16px !important;
     line-height: 1.55 !important;
+  }
+}
+/* Large tablet / small desktop (992-1199): push phone right, keep text readable */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-banner-six .illustration {
+    right: -5% !important;
+    max-width: 48% !important;
+    top: 12% !important;
+  }
+  .hero-banner-six .hero-heading {
+    font-size: 68px !important;
+    line-height: 1.02 !important;
+    letter-spacing: -3px !important;
+  }
+  .hero-banner-six .fs-24 {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+}
+/* Medium desktop (1200-1439): illustration slightly right to avoid text overlap */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero-banner-six .illustration {
+    right: 0% !important;
+    max-width: 55% !important;
+    top: 14% !important;
+  }
+  .hero-banner-six .hero-heading {
+    font-size: 85px !important;
+    line-height: 1em !important;
+    letter-spacing: -3.5px !important;
   }
 }
 /* Mobile: reorder and center hero content */
