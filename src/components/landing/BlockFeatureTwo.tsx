@@ -2,54 +2,63 @@
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 
-import featureImg from "@/assets/images/assets/card_14.png"
-import planImg from "@/assets/images/assets/plan.png"
-import securityImg from "@/assets/images/assets/security.png"
-import dodontImg from "@/assets/images/assets/dodont.png"
-import allinoneImg from "@/assets/images/assets/allinone.png"
+import planningImg from "@/assets/images/assets/planning.png"
+import safetyImg from "@/assets/images/assets/safety.png"
+import cultureImg from "@/assets/images/assets/culture.png"
+import bookingImg from "@/assets/images/assets/booking.png"
+import translateImg from "@/assets/images/assets/translate.png"
+import expensesImg from "@/assets/images/assets/expenses.png"
+import packingImg from "@/assets/images/assets/packing.png"
 
 const features = [
    {
       emoji: "📅",
       title: "Plan your perfect trip in minutes, not hours",
-      desc: "Tell Guidera where you want to go, your travel style, and budget. Get a complete day-by-day itinerary in seconds.",
-      bullets: ["Personalized recommendations", "Smart scheduling", "Budget optimization"],
-      img: planImg,
+      desc: "Tell Guidera where you want to go, your travel style, and budget. Get a complete day-by-day itinerary generated in seconds — not hours.",
+      bullets: ["Personalized day-by-day itineraries", "Smart scheduling & budget optimization", "One-tap Smart Plan generation"],
+      img: planningImg,
    },
    {
       emoji: "🛡️",
       title: "Travel with confidence, not worry",
-      desc: "Get instant alerts about unsafe areas, scams, and emergencies. Our engine monitors your location and keeps you informed.",
-      bullets: ["Color-coded danger zones", "Real-time alerts", "One-tap SOS"],
-      img: securityImg,
+      desc: "Get instant alerts about unsafe areas, scams, and emergencies. Our engine monitors your location and keeps you informed 24/7.",
+      bullets: ["Color-coded danger zones", "Scam & emergency alerts", "One-tap SOS"],
+      img: safetyImg,
    },
    {
       emoji: "🙏",
       title: "Never accidentally offend again",
       desc: "Learn the do\u2019s and don\u2019ts before you arrive. Cultural insights, etiquette tips, and local customs for every destination.",
-      bullets: ["Etiquette guides", "Tipping customs", "Dress codes"],
-      img: dodontImg,
+      bullets: ["Do\u2019s & don\u2019ts per country", "Tipping & dress code guides", "Local etiquette tips"],
+      img: cultureImg,
    },
    {
       emoji: "✈️",
       title: "Flights, hotels, cars, experiences. One app.",
-      desc: "Stop juggling multiple apps. Book everything in one place, see your entire trip at a glance.",
-      bullets: ["Compare prices", "Bundle deals", "Easy modifications"],
-      img: allinoneImg,
+      desc: "Stop juggling multiple apps. Book everything in one place, compare prices across 50+ providers, and see your entire trip at a glance.",
+      bullets: ["Compare 50+ providers", "Bundle deals & discounts", "Manage all bookings in one place"],
+      img: bookingImg,
    },
    {
       emoji: "📸",
       title: "Point your camera. Understand everything.",
-      desc: "Scan menus, signs, and documents in any language. Instant translations right on your screen.",
-      bullets: ["Real-time camera translation", "Menu scanning", "100+ languages"],
-      img: featureImg,
+      desc: "Scan menus, signs, and documents in any language. Instant translations overlaid right on your screen.",
+      bullets: ["Real-time camera translation", "Menu & sign scanning", "100+ languages supported"],
+      img: translateImg,
    },
    {
       emoji: "💰",
       title: "Know exactly where your money goes",
-      desc: "Track every expense in real-time. Set budgets, scan receipts, get insights.",
-      bullets: ["Auto currency conversion", "Receipt scanning", "Budget alerts"],
-      img: featureImg,
+      desc: "Track every expense in real-time with auto currency conversion. Set budgets, scan receipts, and never go over budget again.",
+      bullets: ["Auto currency conversion", "Receipt scanning", "Budget alerts & insights"],
+      img: expensesImg,
+   },
+   {
+      emoji: "🧳",
+      title: "Pack smarter, not heavier",
+      desc: "Weather-aware. Profession-aware. Allergy-aware. Your packing list adapts to your destination, your health, and your travel style.",
+      bullets: ["Weather-based suggestions", "Profession & health-aware", "Shared lists for groups"],
+      img: packingImg,
    },
 ];
 
@@ -161,9 +170,31 @@ const BlockFeatureTwo = () => {
                  height: '100vh',
               };
 
+   const sectionHeader = (
+      <div className="container" style={{ marginBottom: isMobile ? '40px' : '0' }}>
+         <div className="row">
+            <div className="col-xl-8 m-auto text-center">
+               <div
+                  className="text-uppercase fw-bold"
+                  style={{ color: '#3FC39E', fontSize: '14px', letterSpacing: '3px', marginBottom: '16px' }}
+               >
+                  Core Features
+               </div>
+               <h2 style={{ fontSize: isMobile ? '36px' : '48px', fontWeight: 700, lineHeight: 1.2, marginBottom: '20px' }}>
+                  Everything you need. One app.
+               </h2>
+               <p style={{ fontSize: '18px', color: '#6B7280', maxWidth: '620px', margin: '0 auto', lineHeight: 1.7 }}>
+                  Guidera combines AI trip planning, real-time safety intelligence, cultural guidance, unified booking, and more — so you can stop juggling 7 apps and start enjoying the journey.
+               </p>
+            </div>
+         </div>
+      </div>
+   );
+
    if (isMobile) {
       return (
          <div style={{ marginTop: '60px' }}>
+            {sectionHeader}
             <div className="container">
                {features.map((feature, idx) => (
                   <div key={idx} style={{ marginBottom: '30px' }}>
@@ -224,6 +255,9 @@ const BlockFeatureTwo = () => {
             marginTop: '120px',
          }}
       >
+         <div style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+            {sectionHeader}
+         </div>
          <div
             style={{
                ...cardViewStyle,

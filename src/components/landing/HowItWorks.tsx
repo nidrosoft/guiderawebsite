@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, ReactNode } from "react"
 import WaitlistModal from "@/components/common/WaitlistModal"
 
 const steps = [
@@ -7,21 +7,78 @@ const steps = [
       number: "01",
       title: "Download the app",
       desc: "Available on iOS and Android. Get set up in under 2 minutes.",
-      emoji: "📱",
+      icon: (
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+            <line x1="12" y1="18" x2="12.01" y2="18" />
+         </svg>
+      ),
    },
    {
       number: "02",
       title: "Tell us about you",
       desc: "Your travel style, diet, health, profession — Guidera learns what matters to you.",
-      emoji: "🧠",
+      icon: (
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+         </svg>
+      ),
    },
    {
       number: "03",
       title: "Start exploring",
       desc: "Tap \u201CGenerate Smart Plan\u201D and watch your entire trip come together instantly.",
-      emoji: "🚀",
+      icon: (
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+         </svg>
+      ),
    },
 ];
+
+const CardDecorator = ({ children }: { children: ReactNode }) => (
+   <div
+      style={{
+         position: 'relative',
+         width: '144px',
+         height: '144px',
+         margin: '0 auto',
+         maskImage: 'radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%)',
+         WebkitMaskImage: 'radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%)',
+      }}
+   >
+      {/* Grid pattern */}
+      <div
+         style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.08) 1px, transparent 1px)',
+            backgroundSize: '24px 24px',
+         }}
+      />
+      {/* Icon container */}
+      <div
+         style={{
+            position: 'absolute',
+            inset: 0,
+            margin: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '48px',
+            height: '48px',
+            background: '#fff',
+            borderTop: '1px solid #E5E7EB',
+            borderLeft: '1px solid #E5E7EB',
+            color: '#111',
+         }}
+      >
+         {children}
+      </div>
+   </div>
+);
 
 const HowItWorks = () => {
    const [showModal, setShowModal] = useState(false)
@@ -35,8 +92,8 @@ const HowItWorks = () => {
          }}
       >
          <div className="container">
-            {/* Section label */}
-            <div style={{ textAlign: 'center', marginBottom: '16px' }}>
+            {/* Header */}
+            <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 60px' }}>
                <span
                   style={{
                      fontSize: '14px',
@@ -44,53 +101,41 @@ const HowItWorks = () => {
                      letterSpacing: '3px',
                      textTransform: 'uppercase',
                      color: '#3FC39E',
+                     display: 'block',
+                     marginBottom: '16px',
                   }}
                >
                   How It Works
                </span>
+               <h2
+                  className="how-it-works-heading"
+                  style={{
+                     fontSize: '48px',
+                     lineHeight: 1.2,
+                     fontWeight: 700,
+                     color: '#111',
+                     marginBottom: '16px',
+                  }}
+               >
+                  Get started in 3 simple steps
+               </h2>
+               <p style={{ fontSize: '17px', color: '#6B7280', lineHeight: 1.6, margin: 0 }}>
+                  No complicated setup. No learning curve. Just download, personalize, and let Guidera handle the rest.
+               </p>
             </div>
 
-            {/* Headline */}
-            <h2
-               className="how-it-works-heading"
-               style={{
-                  textAlign: 'center',
-                  fontSize: '48px',
-                  lineHeight: 1.2,
-                  fontWeight: 700,
-                  color: '#111',
-                  margin: '0 auto 70px',
-               }}
-            >
-               Get started in 3 simple steps
-            </h2>
-
             {/* Steps */}
-            <div className="row justify-content-center align-items-start">
+            <div className="row justify-content-center">
                {steps.map((step, idx) => (
-                  <div key={idx} className="col-lg-4 col-md-6 mb-4" style={{ position: 'relative' }}>
-                     {/* Dashed connector line (between cards, not after last) */}
-                     {idx < steps.length - 1 && (
-                        <div
-                           className="d-none d-lg-block"
-                           style={{
-                              position: 'absolute',
-                              top: '80px',
-                              right: '-16px',
-                              width: '32px',
-                              height: '2px',
-                              borderTop: '2px dashed #ccc',
-                              zIndex: 2,
-                           }}
-                        />
-                     )}
+                  <div key={idx} className="col-lg-4 col-md-6 mb-4">
                      <div
                         style={{
                            background: '#F7F7F7',
                            borderRadius: '24px',
-                           padding: '44px 36px',
+                           padding: '40px 32px 36px',
                            textAlign: 'center',
                            height: '100%',
+                           border: 'none',
                            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                         }}
                         onMouseEnter={(e) => {
@@ -102,29 +147,36 @@ const HowItWorks = () => {
                            (e.currentTarget as HTMLDivElement).style.boxShadow = 'none';
                         }}
                      >
-                        {/* Step number */}
+                        {/* Grid decorator with icon */}
+                        <CardDecorator>
+                           {step.icon}
+                        </CardDecorator>
+
+                        {/* Step number badge */}
                         <div
                            style={{
-                              fontSize: '56px',
-                              fontWeight: 800,
-                              color: 'rgba(63,195,158,0.2)',
-                              lineHeight: 1,
-                              marginBottom: '12px',
+                              display: 'inline-block',
+                              fontSize: '12px',
+                              fontWeight: 700,
+                              letterSpacing: '1.5px',
+                              color: '#3FC39E',
+                              background: 'rgba(63,195,158,0.1)',
+                              borderRadius: '20px',
+                              padding: '4px 14px',
+                              marginBottom: '16px',
+                              textTransform: 'uppercase',
                            }}
                         >
-                           {step.number}
+                           Step {step.number}
                         </div>
-
-                        {/* Emoji */}
-                        <div style={{ fontSize: '40px', marginBottom: '16px' }}>{step.emoji}</div>
 
                         {/* Title */}
                         <h4
                            style={{
-                              fontSize: '24px',
+                              fontSize: '22px',
                               fontWeight: 700,
                               color: '#111',
-                              marginBottom: '12px',
+                              marginBottom: '10px',
                            }}
                         >
                            {step.title}
@@ -133,9 +185,9 @@ const HowItWorks = () => {
                         {/* Description */}
                         <p
                            style={{
-                              fontSize: '16px',
-                              color: '#666',
-                              lineHeight: 1.6,
+                              fontSize: '15px',
+                              color: '#6B7280',
+                              lineHeight: 1.65,
                               margin: 0,
                            }}
                         >

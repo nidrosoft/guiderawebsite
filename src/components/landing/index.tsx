@@ -1,5 +1,4 @@
 import Footer from "@/layouts/footers/Footer"
-import BlockFeature from "./BlockFeature"
 import BlockFeatureTwo from "./BlockFeatureTwo"
 import FancyBanner from "./FancyBanner"
 import FancyBannerTwo from "./FancyBannerTwo"
@@ -21,7 +20,6 @@ const Home = () => {
       <Problem />
       <Solution />
       <div id="features">
-        <BlockFeature />
         <BlockFeatureTwo />
       </div>
       <div id="how-it-works">
