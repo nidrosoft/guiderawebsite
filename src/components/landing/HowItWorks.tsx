@@ -135,7 +135,7 @@ const HowItWorks = () => {
                            padding: '40px 32px 36px',
                            textAlign: 'center',
                            height: '100%',
-                           border: 'none',
+                           border: '1px solid #E5E7EB',
                            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                         }}
                         onMouseEnter={(e) => {

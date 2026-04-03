@@ -87,7 +87,7 @@ const Problem = () => {
                      <div
                         style={{
                            background: '#fff',
-                           border: '1px solid rgba(0,0,0,0.06)',
+                           border: '1px solid #E5E7EB',
                            borderRadius: '24px',
                            padding: '40px 32px',
                            height: '100%',
@@ -99,7 +99,7 @@ const Problem = () => {
                         }}
                         onMouseLeave={(e) => {
                            (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
-                           (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,0,0,0.06)';
+                           (e.currentTarget as HTMLDivElement).style.borderColor = '#E5E7EB';
                         }}
                      >
                         <div

@@ -157,14 +157,16 @@ const BlockFeature = () => {
                style={{
                   background: '#F9FAFB',
                   borderRadius: '32px',
-                  padding: '60px 40px',
+                  padding: '70px 60px',
+                  border: '1px solid #E5E7EB',
+                  boxShadow: '0 20px 60px rgba(0, 0, 0, 0.10)',
                   overflow: 'hidden',
                }}
             >
                <div className="row align-items-center">
                   {/* Phone screenshot */}
                   <div className="col-lg-5 text-center mb-4 mb-lg-0">
-                     <div style={{ position: 'relative', maxWidth: '280px', margin: '0 auto' }}>
+                     <div style={{ position: 'relative', maxWidth: '250px', margin: '0 auto' }}>
                         {feature_tabs.map((tab, idx) => (
                            <div
                               key={tab.id}

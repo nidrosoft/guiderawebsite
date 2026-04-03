@@ -300,8 +300,9 @@ const BlockFeatureTwo = () => {
                               width: '100%',
                               background: '#F7F7F7',
                               borderRadius: '50px',
-                              padding: '50px',
-                              boxShadow: '0 10px 40px rgba(0, 0, 0, 0.06)',
+                              padding: '70px 80px',
+                              border: '1px solid #E5E7EB',
+                              boxShadow: '0 20px 60px rgba(0, 0, 0, 0.10)',
                            }}
                         >
                            <div className="row align-items-center">
@@ -353,8 +354,8 @@ const BlockFeatureTwo = () => {
                                     </div>
                                  </div>
                               </div>
-                              <div className="col-lg-7">
-                                 <Image src={feature.img} alt={feature.title} style={{ width: '100%', height: 'auto' }} />
+                              <div className="col-lg-7" style={{ padding: '0 20px' }}>
+                                 <Image src={feature.img} alt={feature.title} style={{ width: '82%', height: 'auto', margin: '0 auto', display: 'block' }} />
                               </div>
                            </div>
                         </div>

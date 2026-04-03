@@ -100,7 +100,7 @@ const Hero = () => {
                      }}>
                         <Image src={avatarImg} alt="Waitlist members" />
                         <div className="rating">
-                           <div className="fw-500 text-dark fs-20">&#10022; 10,847 travelers already waiting &middot; Launching 2026</div>
+                           <div className="fw-500 text-dark fs-20">&#10022; 10,847 travelers waiting &middot; Launching in May 2026</div>
                         </div>
                      </div>
                   </div>
