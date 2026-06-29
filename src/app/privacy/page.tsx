@@ -16,10 +16,16 @@ const PrivacyPage = () => {
             We are committed to protecting your privacy and being transparent about how we handle your data. Please read this Privacy Policy carefully. By using the Service, you consent to the practices described in this policy.
          </p>
 
+         <div style={{ background: '#F4FBF8', border: '1px solid #C9EFE2', borderRadius: '12px', padding: '20px 24px', margin: '24px 0' }}>
+            <p style={{ margin: 0 }}>
+               <strong>You do not need an account to explore Guidera.</strong> Browsing travel deals, destinations, and other discovery content does not require you to register or sign in, and we do not require an account to use those features. You only create an account when you want personalized features &mdash; such as saving trips, generating AI plans and briefings, expense tracking, the travel journal, or community and Local Guide features. Account creation and sign-in are handled by our authentication provider, <strong>Clerk</strong>, including &quot;Sign in with Apple&quot; and &quot;Sign in with Google.&quot;
+            </p>
+         </div>
+
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>1. Information We Collect</h2>
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>1.1 Information You Provide Directly</h3>
-         <p><strong>Account Information:</strong> When you create an account, we collect your name, email address, password, and optionally your profile photo, date of birth, and preferred language.</p>
+         <p><strong>Account Information:</strong> When you create an account, our authentication provider Clerk collects your name and email address, and &mdash; if you use &quot;Sign in with Apple&quot; or &quot;Sign in with Google&quot; &mdash; the unique account identifier and basic profile information (such as name and email) that Apple or Google shares with us. You may optionally add a profile photo, date of birth, and preferred language. If you create an account with email and password, your password is securely managed by Clerk and is never stored by Guidera in plain text.</p>
          <p><strong>Profile Information:</strong> If you complete your travel profile, we may collect your travel preferences (travel style, budget level, interests), dietary restrictions or allergies, accessibility needs, passport country (for visa requirement lookup — we do not collect your passport number), and preferred currency.</p>
          <p><strong>Trip Information:</strong> When you create or plan trips, we collect destination, dates, number of travelers, budget preferences, and itinerary details.</p>
          <p><strong>Communications:</strong> When you contact us for support, send messages through community features, or interact with the AI travel assistant, we collect the content of those communications.</p>
@@ -35,8 +41,9 @@ const PrivacyPage = () => {
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>1.3 Information from Third Parties</h3>
          <p><strong>Travel Providers:</strong> When you search for or compare travel options, we receive pricing, availability, and product information from third-party travel APIs (such as flight data, hotel listings, and experience catalogs). This information relates to travel products, not to you personally.</p>
-         <p><strong>Sign-In Services:</strong> If you sign in using Apple, Google, or another third-party authentication provider, we receive the information you authorize that provider to share (typically name and email address).</p>
-         <p><strong>Analytics Providers:</strong> We use third-party analytics tools that may collect anonymized or aggregated usage data to help us understand how the Service is used.</p>
+         <p><strong>Sign-In Services:</strong> If you sign in using Apple or Google through Clerk, we receive the information you authorize that provider to share &mdash; typically a unique account identifier and your name and email address. If you choose &quot;Hide My Email&quot; with Sign in with Apple, we receive a private relay email address rather than your personal one.</p>
+         <p><strong>Subscription Information:</strong> If you purchase a Guidera Pro subscription, our subscription provider RevenueCat and the Apple App Store process the transaction and share your subscription status, entitlement, and anonymized purchase identifiers with us. We do not receive or store your payment-card details &mdash; all payment processing is handled by Apple through your Apple ID.</p>
+         <p><strong>Analytics Providers:</strong> We use Mixpanel to understand how the Service is used (for example, which features are opened and how often). We use Sentry to capture crash reports and performance data so we can diagnose and fix problems. These tools collect usage events, device and app information, and diagnostic data associated with a pseudonymous identifier.</p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>2. How We Use Your Information</h2>
          <p>We use the information we collect to:</p>
@@ -68,6 +75,11 @@ const PrivacyPage = () => {
                </thead>
                <tbody>
                   <tr style={{ borderBottom: '1px solid #eee' }}>
+                     <td style={{ padding: '8px 12px' }}>Authentication (Clerk)</td>
+                     <td style={{ padding: '8px 12px' }}>Account creation, sign-in, session management</td>
+                     <td style={{ padding: '8px 12px' }}>Name, email, Apple/Google account identifiers</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}>
                      <td style={{ padding: '8px 12px' }}>Cloud Hosting (Supabase)</td>
                      <td style={{ padding: '8px 12px' }}>Data storage and backend services</td>
                      <td style={{ padding: '8px 12px' }}>All Service data (encrypted)</td>
@@ -78,14 +90,24 @@ const PrivacyPage = () => {
                      <td style={{ padding: '8px 12px' }}>Conversation content, trip context</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid #eee' }}>
+                     <td style={{ padding: '8px 12px' }}>Subscriptions (RevenueCat)</td>
+                     <td style={{ padding: '8px 12px' }}>Managing Guidera Pro subscriptions</td>
+                     <td style={{ padding: '8px 12px' }}>Subscription status, anonymized purchase IDs</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}>
+                     <td style={{ padding: '8px 12px' }}>Analytics (Mixpanel)</td>
+                     <td style={{ padding: '8px 12px' }}>Product usage analysis</td>
+                     <td style={{ padding: '8px 12px' }}>Usage events, device info (pseudonymous)</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}>
+                     <td style={{ padding: '8px 12px' }}>Crash &amp; Performance (Sentry)</td>
+                     <td style={{ padding: '8px 12px' }}>Diagnosing crashes and errors</td>
+                     <td style={{ padding: '8px 12px' }}>Crash logs, device and diagnostic data</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}>
                      <td style={{ padding: '8px 12px' }}>Identity Verification (Entrust/Onfido)</td>
                      <td style={{ padding: '8px 12px' }}>Local Guide verification</td>
                      <td style={{ padding: '8px 12px' }}>ID document image, selfie</td>
-                  </tr>
-                  <tr style={{ borderBottom: '1px solid #eee' }}>
-                     <td style={{ padding: '8px 12px' }}>Analytics</td>
-                     <td style={{ padding: '8px 12px' }}>Usage analysis</td>
-                     <td style={{ padding: '8px 12px' }}>Anonymized usage data</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid #eee' }}>
                      <td style={{ padding: '8px 12px' }}>Push Notifications</td>
@@ -144,6 +166,14 @@ const PrivacyPage = () => {
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>7.4 How to Exercise Your Rights</h3>
          <p>To exercise any of these rights, contact us at <a href="mailto:privacy@guidera.one" style={{ color: '#3FC39E' }}>privacy@guidera.one</a>. We will respond to verifiable requests within thirty (30) days (or within the timeframe required by applicable law). We may request additional information to verify your identity before processing your request.</p>
+
+         <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>7.5 Deleting Your Account and Data</h3>
+         <p>You can delete your Guidera account and associated personal data in two ways:</p>
+         <ul style={{ paddingLeft: '20px', marginBottom: '16px' }}>
+            <li><strong>In the app:</strong> Open <strong>Settings &gt; Account &gt; Delete Account</strong> and confirm. This permanently deletes your account, profile, trips, AI content, journal entries, expenses, and community content.</li>
+            <li><strong>By request:</strong> Email <a href="mailto:privacy@guidera.one" style={{ color: '#3FC39E' }}>privacy@guidera.one</a> from your account email address with the subject &quot;Delete My Account,&quot; or follow the steps on our <a href="/delete-account" style={{ color: '#3FC39E' }}>Account Deletion page</a>.</li>
+         </ul>
+         <p>Once your deletion request is confirmed, we delete or anonymize your personal information within thirty (30) days, except where limited retention is required by law (for example, tax, accounting, or fraud-prevention records). Subscription cancellation must be done separately through your Apple ID, as described in our Terms of Service.</p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>8. Children&apos;s Privacy</h2>
          <p>The Service is not directed to children under the age of 18. We do not knowingly collect personal information from children under 18. If you believe we have collected information from a child under 18, please contact us at <a href="mailto:privacy@guidera.one" style={{ color: '#3FC39E' }}>privacy@guidera.one</a> and we will promptly delete that information.</p>

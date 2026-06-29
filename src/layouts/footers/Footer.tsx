@@ -28,7 +28,7 @@ const Footer = () => {
                   <h6 className="footer-title" style={{ fontSize: '15px', fontWeight: 700, marginBottom: '12px' }}>Product</h6>
                   <ul className="footer-nav-link style-none">
                     <li><Link href="/#features">Features</Link></li>
-                    <li><Link href="/#pricing">Pricing</Link></li>
+                    <li><Link href="/pricing">Pricing</Link></li>
                     <li><Link href="/#how-it-works">How It Works</Link></li>
                     <li><Link href="/#faq">FAQ</Link></li>
                   </ul>
@@ -52,6 +52,7 @@ const Footer = () => {
                     <li><Link href="/privacy">Privacy Policy</Link></li>
                     <li><Link href="/terms">Terms of Service</Link></li>
                     <li><Link href="/community-guidelines">Community Guidelines</Link></li>
+                    <li><Link href="/delete-account">Delete Account</Link></li>
                     <li><Link href="/gdpr">GDPR</Link></li>
                   </ul>
                 </div>

@@ -13,6 +13,17 @@ const TermsPage = () => {
             <strong>IMPORTANT:</strong> Section 14 contains an arbitration agreement and class action waiver. Please read it carefully, as it affects your legal rights.
          </p>
 
+         <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>Acceptance of These Terms &amp; End User License Agreement (EULA)</h2>
+         <p>
+            These Terms of Service (the &quot;Terms&quot;) are a legal agreement between you and Guidera Inc. (&quot;Guidera,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) and also serve as the End User License Agreement (&quot;EULA&quot;) governing your use of the Guidera mobile application and related services. <strong>By downloading, installing, accessing, creating an account on, or otherwise using the Service, you confirm that you have read, understood, and agree to be bound by these Terms, our <a href="/privacy" style={{ color: '#3FC39E' }}>Privacy Policy</a>, and our <a href="/community-guidelines" style={{ color: '#3FC39E' }}>Community Guidelines</a>.</strong> If you do not agree to these Terms, do not download, install, or use the Service.
+         </p>
+         <p>
+            <strong>License to Use the App.</strong> Subject to your compliance with these Terms, Guidera grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download and install one copy of the Guidera application on a device that you own or control, and to access and use the Service for your personal, non-commercial use. This license does not allow you to rent, lease, lend, sell, redistribute, reverse engineer, decompile, or create derivative works of the Service, except to the extent such restrictions are prohibited by applicable law. All rights not expressly granted to you are reserved by Guidera.
+         </p>
+         <p>
+            <strong>Apple App Store EULA Terms.</strong> If you download the app from the Apple App Store, you acknowledge that: (a) these Terms are between you and Guidera only, not with Apple, and Apple is not responsible for the app or its content; (b) your license is limited to use on any Apple-branded products you own or control as permitted by the App Store Terms of Service; (c) Apple has no obligation to provide maintenance or support for the app; (d) in the event of any failure of the app to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price (if any), and to the maximum extent permitted by law Apple has no other warranty obligation with respect to the app; (e) Apple is not responsible for addressing any claims relating to the app, including product-liability, legal/regulatory, or consumer-protection claims; (f) Apple is not responsible for the investigation, defense, settlement, or discharge of any third-party intellectual-property infringement claim relating to the app; and (g) Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you. You represent that you are not located in a country subject to a U.S. Government embargo and are not on any U.S. Government list of prohibited or restricted parties.
+         </p>
+
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>1. Definitions</h2>
          <ul style={{ paddingLeft: '20px', marginBottom: '16px' }}>
             <li><strong>&quot;Service&quot;</strong> refers to the Guidera mobile application (iOS and Android), the website at guidera.one, and all features, tools, content, and functionality we provide.</li>
@@ -54,7 +65,7 @@ const TermsPage = () => {
          <p>You must notify us immediately at <a href="mailto:support@guidera.one" style={{ color: '#3FC39E' }}>support@guidera.one</a> if you become aware of any unauthorized use of your account or any other breach of security.</p>
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>3.4 Account Deletion</h3>
-         <p>You may delete your account at any time through the Settings menu in the app. Upon deletion, we will remove your personal data in accordance with our Privacy Policy, subject to any legal retention obligations. Account deletion is permanent and cannot be reversed.</p>
+         <p>You may delete your account and associated data at any time directly in the app (Settings &gt; Account &gt; Delete Account), or by requesting deletion as described on our <a href="/delete-account" style={{ color: '#3FC39E' }}>Account Deletion page</a>. Upon deletion, we will remove your personal data in accordance with our Privacy Policy, subject to any legal retention obligations. Account deletion is permanent and cannot be reversed.</p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>4. AI-Powered Features</h2>
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>4.1 Nature of AI Content</h3>
@@ -79,6 +90,28 @@ const TermsPage = () => {
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>5.3 Content Moderation</h3>
          <p>We reserve the right, but have no obligation, to monitor, review, edit, or remove any Content at our sole discretion. We may remove Content that violates these Terms or our Community Guidelines.</p>
+
+         <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>5.4 Zero-Tolerance Policy for Objectionable Content and Abusive Users</h3>
+         <p>
+            Guidera has a <strong>zero-tolerance policy for objectionable content and abusive behavior.</strong> Because the Service includes user-generated content and connections between travelers, you agree that you will <strong>not</strong> create, upload, post, share, or transmit any Content, or engage in any conduct, that is:
+         </p>
+         <ul style={{ paddingLeft: '20px', marginBottom: '16px' }}>
+            <li>harassing, bullying, threatening, hateful, or that incites violence or harm against any person or group;</li>
+            <li>sexually explicit, pornographic, or that sexualizes or endangers minors in any way;</li>
+            <li>discriminatory or demeaning on the basis of race, ethnicity, national origin, religion, gender, gender identity, sexual orientation, disability, age, or any other protected characteristic;</li>
+            <li>defamatory, obscene, vulgar, graphically violent, or otherwise objectionable;</li>
+            <li>promoting illegal activity, self-harm, dangerous behavior, fraud, or the exploitation of others; or</li>
+            <li>spam, scams, impersonation, or unsolicited commercial solicitation.</li>
+         </ul>
+         <p>
+            <strong>We do not tolerate any of the above.</strong> You agree to use the in-app reporting and blocking tools to flag objectionable Content or abusive users. We provide a mechanism to report content and block abusive users in every area of the app where users can interact with content or one another.
+         </p>
+         <p>
+            <strong>Our commitment:</strong> We act on reports of objectionable content and abusive behavior, and we remove flagged content and eject the users who provided it <strong>within 24 hours</strong> of becoming aware of a violation. When you submit a report, you may also block the offending user immediately so that you no longer see their content or receive communications from them.
+         </p>
+         <p>
+            <strong>Consequences.</strong> We reserve the right, at our sole discretion and without prior notice, to remove or disable any Content, suspend or permanently ban any user, terminate accounts, and report unlawful activity to law enforcement. By using the Service, you acknowledge that violations of this zero-tolerance policy may result in the immediate and permanent loss of access to the Service.
+         </p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>6. Local Guide Partner Program</h2>
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>6.1 Overview</h3>
@@ -115,6 +148,30 @@ const TermsPage = () => {
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>8.3 Accuracy</h3>
          <p>Automated data extraction from receipts and documents may contain errors. You are responsible for verifying the accuracy of extracted information and any expense calculations.</p>
+
+         <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>Guidera Pro Subscriptions &amp; Billing</h2>
+         <p>
+            Guidera offers an optional auto-renewable subscription, <strong>Guidera Pro</strong>, which unlocks expanded and premium features. Browsing travel deals and destinations and core planning are available for free without a subscription; Guidera Pro is entirely optional. For a full description of free versus Pro features and current pricing, see our <a href="/pricing" style={{ color: '#3FC39E' }}>Pricing page</a>.
+         </p>
+         <p>
+            <strong>Auto-renewable subscription terms.</strong> Guidera Pro is sold as an auto-renewable subscription with a choice of billing periods (currently 3 months, 6 months, or 12 months). When you purchase a subscription:
+         </p>
+         <ul style={{ paddingLeft: '20px', marginBottom: '16px' }}>
+            <li>Payment is charged to your Apple ID account upon confirmation of purchase.</li>
+            <li>Your subscription automatically renews for the same period at the then-current price unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
+            <li>Your Apple ID account is charged for renewal within 24 hours prior to the end of the current period.</li>
+            <li>You can manage your subscription and turn off auto-renewal in your Apple ID Account Settings (Settings &gt; your name &gt; Subscriptions) at any time after purchase.</li>
+            <li>You may restore a previous purchase from the membership screen in the app at any time.</li>
+         </ul>
+         <p>
+            <strong>Payments are processed by Apple.</strong> All subscription purchases made through the iOS app are processed by Apple through your Apple ID, in accordance with the Apple Media Services Terms and Conditions. Guidera does not collect or store your payment-card details. Subscription management, including upgrades, downgrades, and cancellations, is handled through your Apple ID.
+         </p>
+         <p>
+            <strong>Refunds.</strong> Except where required by law, subscription fees are non-refundable, and there are no refunds or credits for partially used periods. Refund requests for purchases made through the Apple App Store are handled by Apple and are subject to Apple&apos;s refund policies. Deleting the app does not cancel your subscription; you must turn off auto-renewal through your Apple ID.
+         </p>
+         <p>
+            <strong>Price changes.</strong> We may change subscription pricing from time to time. Any price change will apply to billing periods after the change. Where required, we will notify you in advance and, where applicable, obtain your consent to continue your subscription at the new price.
+         </p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>9. Intellectual Property</h2>
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>9.1 Our Property</h3>
