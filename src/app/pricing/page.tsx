@@ -34,9 +34,10 @@ const proFeatures = [
 ]
 
 const plans = [
-   { period: "3 Months", price: "$49.99", per: "billed every 3 months", featured: false },
-   { period: "12 Months", price: "$149.99", per: "billed yearly — best value", featured: true },
-   { period: "6 Months", price: "$84.99", per: "billed every 6 months", featured: false },
+   { period: "Monthly", price: "$19.99", per: "billed every month", perMonth: "$19.99/mo", savings: null, featured: false },
+   { period: "3 Months", price: "$49.99", per: "billed every 3 months", perMonth: "$16.66/mo", savings: "Save 17%", featured: false },
+   { period: "12 Months", price: "$149.99", per: "billed yearly — best value", perMonth: "$12.50/mo", savings: "Save 37%", featured: true },
+   { period: "6 Months", price: "$84.99", per: "billed every 6 months", perMonth: "$14.17/mo", savings: "Save 29%", featured: false },
 ]
 
 const PricingPage = () => {
@@ -103,17 +104,22 @@ const PricingPage = () => {
 
             {/* Plans */}
             <h2 style={{ fontSize: "28px", fontWeight: 700, textAlign: "center", marginTop: "64px", marginBottom: "8px" }}>Choose your billing period</h2>
-            <p style={{ textAlign: "center", color: "#777", marginBottom: "40px" }}>One Guidera Pro membership. Pick the period that suits you. Subscribe in the app.</p>
+            <p style={{ textAlign: "center", color: "#777", marginBottom: "8px" }}>One Guidera Pro membership. Pick the period that suits you. Subscribe in the app.</p>
+            <p style={{ textAlign: "center", color: BRAND, fontWeight: 600, fontSize: "15px", marginBottom: "40px" }}>Includes a 7-day free trial for new subscribers.</p>
             <div className="row justify-content-center">
                {plans.map((plan, i) => (
-                  <div key={i} className="col-lg-4 col-md-6 mb-4 d-flex">
-                     <div style={{ border: plan.featured ? `2px solid ${BRAND}` : "1px solid #eee", borderRadius: "16px", padding: "32px 28px", width: "100%", textAlign: "center", position: "relative", background: plan.featured ? "#F4FBF8" : "#fff" }}>
+                  <div key={i} className="col-lg-3 col-md-6 mb-4 d-flex">
+                     <div style={{ border: plan.featured ? `2px solid ${BRAND}` : "1px solid #eee", borderRadius: "16px", padding: "32px 24px", width: "100%", textAlign: "center", position: "relative", background: plan.featured ? "#F4FBF8" : "#fff" }}>
                         {plan.featured && (
-                           <span style={{ position: "absolute", top: "-13px", left: "50%", transform: "translateX(-50%)", background: BRAND, color: "#fff", fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", padding: "5px 16px", borderRadius: "100px" }}>Best Value</span>
+                           <span style={{ position: "absolute", top: "-13px", left: "50%", transform: "translateX(-50%)", background: BRAND, color: "#fff", fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", padding: "5px 16px", borderRadius: "100px", whiteSpace: "nowrap" }}>Best Value</span>
                         )}
                         <div style={{ fontSize: "16px", fontWeight: 700, color: "#333", marginBottom: "10px" }}>{plan.period}</div>
-                        <div style={{ fontSize: "38px", fontWeight: 700, color: plan.featured ? BRAND : "#111" }}>{plan.price}</div>
-                        <p style={{ fontSize: "14px", color: "#888", marginTop: "6px", marginBottom: 0 }}>{plan.per}</p>
+                        <div style={{ fontSize: "36px", fontWeight: 700, color: plan.featured ? BRAND : "#111" }}>{plan.price}</div>
+                        <p style={{ fontSize: "14px", color: "#555", marginTop: "6px", marginBottom: "4px", fontWeight: 600 }}>{plan.perMonth}</p>
+                        <p style={{ fontSize: "13px", color: "#888", marginBottom: plan.savings ? "8px" : 0 }}>{plan.per}</p>
+                        {plan.savings && (
+                           <p style={{ fontSize: "13px", fontWeight: 700, color: BRAND, marginBottom: 0 }}>{plan.savings}</p>
+                        )}
                      </div>
                   </div>
                ))}
@@ -124,8 +130,7 @@ const PricingPage = () => {
                <h2 style={{ fontSize: "20px", fontWeight: 700, marginBottom: "16px" }}>Subscription terms</h2>
                <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.8 }}>
                   <p>
-                     Guidera Pro is an auto-renewable subscription, available in 3-month ($49.99), 6-month ($84.99),
-                     and 12-month ($149.99) periods. Subscriptions are purchased in the Guidera iOS app.
+                     Guidera Pro is an auto-renewable subscription, available in monthly ($19.99), 3-month ($49.99), 6-month ($84.99), and 12-month ($149.99) periods. Each plan includes a 7-day free trial for eligible first-time subscribers. Subscriptions are purchased in the Guidera iOS app.
                   </p>
                   <ul style={{ paddingLeft: "20px", marginBottom: "16px" }}>
                      <li>Payment is charged to your <strong>Apple ID</strong> at confirmation of purchase.</li>
