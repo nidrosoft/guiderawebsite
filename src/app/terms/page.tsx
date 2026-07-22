@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 
 const TermsPage = () => {
    return (
-      <LegalPageLayout title="Terms of Service" lastUpdated="March 26, 2026">
+      <LegalPageLayout title="Terms of Service" lastUpdated="July 22, 2026">
          <p style={{ marginBottom: '16px' }}>
             <strong>IMPORTANT:</strong> Section 14 contains an arbitration agreement and class action waiver. Please read it carefully, as it affects your legal rights.
          </p>
 
-         <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>Acceptance of These Terms &amp; End User License Agreement (EULA)</h2>
+         <h2>Acceptance of These Terms &amp; End User License Agreement (EULA)</h2>
          <p>
             These Terms of Service (the &quot;Terms&quot;) are a legal agreement between you and Guidera Inc. (&quot;Guidera,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) and also serve as the End User License Agreement (&quot;EULA&quot;) governing your use of the Guidera mobile application and related services. <strong>By downloading, installing, accessing, creating an account on, or otherwise using the Service, you confirm that you have read, understood, and agree to be bound by these Terms, our <a href="/privacy" style={{ color: '#3FC39E' }}>Privacy Policy</a>, and our <a href="/community-guidelines" style={{ color: '#3FC39E' }}>Community Guidelines</a>.</strong> If you do not agree to these Terms, do not download, install, or use the Service.
          </p>
@@ -58,8 +58,10 @@ const TermsPage = () => {
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>3.1 Eligibility</h3>
          <p>You must be at least 18 years of age to create an account or use the Service. By creating an account, you represent and warrant that you meet this age requirement.</p>
 
-         <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>3.2 Account Information</h3>
-         <p>You agree to provide accurate, current, and complete information during registration and to keep your account information up to date. You are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account.</p>
+         <h3>3.2 Account Information &amp; Sign-In</h3>
+         <p>
+            You may create or access an account using Sign in with Apple, Google, Facebook, or a phone number (SMS one-time code), managed through our authentication provider. You agree to provide accurate, current, and complete information during registration and to keep your account information up to date. You are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account.
+         </p>
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>3.3 Account Security</h3>
          <p>You must notify us immediately at <a href="mailto:support@guidera.one" style={{ color: '#3FC39E' }}>support@guidera.one</a> if you become aware of any unauthorized use of your account or any other breach of security.</p>
@@ -154,14 +156,15 @@ const TermsPage = () => {
             Guidera offers an optional auto-renewable subscription, <strong>Guidera Pro</strong>, which unlocks expanded and premium features. Browsing travel deals and destinations and core planning are available for free without a subscription; Guidera Pro is entirely optional. For a full description of free versus Pro features and current pricing, see our <a href="/pricing" style={{ color: '#3FC39E' }}>Pricing page</a>.
          </p>
          <p>
-            <strong>Auto-renewable subscription terms.</strong> Guidera Pro is sold as an auto-renewable subscription with a choice of billing periods (currently 3 months, 6 months, or 12 months). When you purchase a subscription:
+            <strong>Auto-renewable subscription terms.</strong> Guidera Pro is sold as an auto-renewable subscription with a choice of billing periods (currently monthly, 3 months, 6 months, or 12 months). Eligible first-time subscribers may receive a 7-day free trial, where offered through the App Store. When you purchase a subscription:
          </p>
          <ul style={{ paddingLeft: '20px', marginBottom: '16px' }}>
-            <li>Payment is charged to your Apple ID account upon confirmation of purchase.</li>
+            <li>Payment is charged to your Apple ID account upon confirmation of purchase (or at the end of any free trial, if applicable).</li>
             <li>Your subscription automatically renews for the same period at the then-current price unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
             <li>Your Apple ID account is charged for renewal within 24 hours prior to the end of the current period.</li>
             <li>You can manage your subscription and turn off auto-renewal in your Apple ID Account Settings (Settings &gt; your name &gt; Subscriptions) at any time after purchase.</li>
             <li>You may restore a previous purchase from the membership screen in the app at any time.</li>
+            <li>Any unused portion of a free trial, where offered, is forfeited when you purchase a subscription.</li>
          </ul>
          <p>
             <strong>Payments are processed by Apple.</strong> All subscription purchases made through the iOS app are processed by Apple through your Apple ID, in accordance with the Apple Media Services Terms and Conditions. Guidera does not collect or store your payment-card details. Subscription management, including upgrades, downgrades, and cancellations, is handled through your Apple ID.
