@@ -1,7 +1,3 @@
-"use client"
-import { useState } from "react"
-import WaitlistModal from "@/components/common/WaitlistModal"
-
 const checkmarks = [
    "Plan in minutes, not hours",
    "Stay safe with real-time alerts",
@@ -12,9 +8,7 @@ const checkmarks = [
 ];
 
 const Solution = () => {
-   const [showModal, setShowModal] = useState(false)
    return (
-      <>
       <div
          className="border-30 solution-section-wrapper"
          style={{
@@ -140,8 +134,8 @@ const Solution = () => {
 
             {/* CTA */}
             <div style={{ textAlign: 'center', marginTop: '50px' }}>
-               <button
-                  onClick={() => setShowModal(true)}
+               <a
+                  href="#how-it-works"
                   style={{
                      display: 'inline-block',
                      background: '#3FC39E',
@@ -151,25 +145,15 @@ const Solution = () => {
                      padding: '16px 40px',
                      borderRadius: '60px',
                      border: 'none',
-                     cursor: 'pointer',
+                     textDecoration: 'none',
                      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                  }}
-                  onMouseEnter={(e) => {
-                     e.currentTarget.style.transform = 'translateY(-2px)';
-                     e.currentTarget.style.boxShadow = '0 8px 30px rgba(63,195,158,0.35)';
-                  }}
-                  onMouseLeave={(e) => {
-                     e.currentTarget.style.transform = 'translateY(0)';
-                     e.currentTarget.style.boxShadow = 'none';
                   }}
                >
                   See How It Works
-               </button>
+               </a>
             </div>
          </div>
       </div>
-      <WaitlistModal isOpen={showModal} onClose={() => setShowModal(false)} />
-      </>
    );
 };
 

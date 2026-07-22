@@ -1,11 +1,8 @@
-"use client"
-import { useState } from "react"
 import Image, { StaticImageData } from "next/image";
 
 import check from "@/assets/images/icon/check.svg"
 import cross from "@/assets/images/icon/cross.svg"
 import shape from "@/assets/images/shape/shape_58.svg"
-import WaitlistModal from "@/components/common/WaitlistModal"
 
 interface DataType {
   id: number;
@@ -76,9 +73,7 @@ const pricing_data: DataType[] = [
 ];
 
 const Pricing = () => {
-  const [showModal, setShowModal] = useState(false)
   return (
-    <>
     <div className="pricing-section-five position-relative z-1 mt-180 xl-mt-150 lg-mt-80 pt-130 lg-pt-80 pb-150 xl-pb-130 lg-pb-80">
       <div className="container">
         <div className="row align-items-end">
@@ -106,7 +101,6 @@ const Pricing = () => {
                       <li key={i}><Image src={li.icon} alt="" className="icon" />{li.title}</li>
                     ))}
                   </ul>
-                  <div className="mt-auto"><button onClick={() => setShowModal(true)} className="btn-seven w-100" style={{ border: 'none', cursor: 'pointer' }}>Join Waitlist</button></div>
                   {item.shape && <Image src={item.shape} alt="" className={`shapes ${item.shape_class}`} />}
                 </div>
               </div>
@@ -115,8 +109,6 @@ const Pricing = () => {
         </div>
       </div>
     </div>
-    <WaitlistModal isOpen={showModal} onClose={() => setShowModal(false)} />
-    </>
   )
 }
 

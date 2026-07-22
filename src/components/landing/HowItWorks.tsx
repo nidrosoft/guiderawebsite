@@ -1,6 +1,5 @@
 "use client"
-import { useState, ReactNode } from "react"
-import WaitlistModal from "@/components/common/WaitlistModal"
+import { ReactNode } from "react"
 
 const steps = [
    {
@@ -81,9 +80,7 @@ const CardDecorator = ({ children }: { children: ReactNode }) => (
 );
 
 const HowItWorks = () => {
-   const [showModal, setShowModal] = useState(false)
    return (
-      <>
       <div
          className="how-it-works-wrapper"
          style={{
@@ -198,38 +195,8 @@ const HowItWorks = () => {
                ))}
             </div>
 
-            {/* CTA */}
-            <div style={{ textAlign: 'center', marginTop: '50px' }}>
-               <button
-                  onClick={() => setShowModal(true)}
-                  style={{
-                     display: 'inline-block',
-                     background: '#3FC39E',
-                     color: '#fff',
-                     fontSize: '18px',
-                     fontWeight: 600,
-                     padding: '16px 40px',
-                     borderRadius: '60px',
-                     border: 'none',
-                     cursor: 'pointer',
-                     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                  }}
-                  onMouseEnter={(e) => {
-                     e.currentTarget.style.transform = 'translateY(-2px)';
-                     e.currentTarget.style.boxShadow = '0 8px 30px rgba(63,195,158,0.35)';
-                  }}
-                  onMouseLeave={(e) => {
-                     e.currentTarget.style.transform = 'translateY(0)';
-                     e.currentTarget.style.boxShadow = 'none';
-                  }}
-               >
-                  Join the Waitlist
-               </button>
-            </div>
          </div>
       </div>
-      <WaitlistModal isOpen={showModal} onClose={() => setShowModal(false)} />
-      </>
    );
 };
 
