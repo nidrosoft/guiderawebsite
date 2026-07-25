@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.guidera.one",
+      "sha256_cert_fingerprints": ["00:02:41:8B:F4:53:BC:E3:D0:A7:45:72:3E:81:15:B5:88:5F:3B:6E:F4:3B:17:F2:E3:34:3F:16:18:6D:3D:6F"]
+    }
+  }
+]
