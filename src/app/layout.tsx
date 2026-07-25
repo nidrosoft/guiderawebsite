@@ -3,6 +3,8 @@ import "../../public/assets/css/responsive.css";
 import "../../public/assets/css/responsive-custom.css";
 
 import type { Metadata } from "next"
+import Script from "next/script"
+import { IUBENDA } from "@/lib/iubenda"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://guidera.one"),
@@ -93,6 +95,10 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning={true}>
         {children}
+        <Script
+          src={IUBENDA.cookieBannerScript}
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

@@ -51,6 +51,7 @@ const Footer = () => {
                   <ul className="footer-nav-link style-none">
                     <li><Link href="/privacy">Privacy Policy</Link></li>
                     <li><Link href="/terms">Terms of Service</Link></li>
+                    <li><Link href="/cookies">Cookie Policy</Link></li>
                     <li><Link href="/community-guidelines">Community Guidelines</Link></li>
                     <li><Link href="/delete-account">Delete Account</Link></li>
                     <li><Link href="/gdpr">GDPR</Link></li>

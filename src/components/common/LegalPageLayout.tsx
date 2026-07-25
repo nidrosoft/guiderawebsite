@@ -3,18 +3,27 @@ import Footer from "@/layouts/footers/Footer"
 
 interface LegalPageLayoutProps {
    title: string
-   lastUpdated: string
+   lastUpdated?: string
+   /** When true, skip our H1/last-updated — used when embedded docs already include their own header */
+   embed?: boolean
    children: React.ReactNode
 }
 
-const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps) => {
+const LegalPageLayout = ({ title, lastUpdated, embed = false, children }: LegalPageLayoutProps) => {
    return (
-      <div className="main-page-wrapper legal-page">
+      <div className={`main-page-wrapper legal-page${embed ? " legal-page--embed" : ""}`}>
          <Header compact />
          <div className="container legal-page-container">
-            {/* Page title — shown on desktop/tablet; hidden on mobile where the in-app or browser chrome already shows it */}
-            <h1 className="legal-page-title">{title}</h1>
-            <p className="legal-page-updated">Last updated: {lastUpdated}</p>
+            {!embed && (
+               <>
+                  <h1 className="legal-page-title">{title}</h1>
+                  {lastUpdated && (
+                     <p className="legal-page-updated">Last updated: {lastUpdated}</p>
+                  )}
+               </>
+            )}
+            {/* Keep an accessible page title for screen readers when the visual H1 comes from the embed */}
+            {embed && <h1 className="visually-hidden">{title}</h1>}
             <div className="legal-content">
                {children}
             </div>
@@ -25,6 +34,10 @@ const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps)
                padding-top: 160px;
                padding-bottom: 80px;
                max-width: 800px;
+            }
+
+            .legal-page--embed .legal-page-container {
+               max-width: 860px;
             }
 
             .legal-page-title {
@@ -47,7 +60,7 @@ const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps)
                color: #444;
             }
 
-            .legal-content h2 {
+            .legal-page:not(.legal-page--embed) .legal-content h2 {
                font-size: 24px !important;
                font-weight: 700 !important;
                margin-bottom: 12px !important;
@@ -56,13 +69,25 @@ const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps)
                line-height: 1.3 !important;
             }
 
-            .legal-content h3 {
+            .legal-page:not(.legal-page--embed) .legal-content h3 {
                font-size: 18px !important;
                font-weight: 600 !important;
                margin-bottom: 8px !important;
                margin-top: 20px !important;
                color: #222 !important;
                line-height: 1.35 !important;
+            }
+
+            .visually-hidden {
+               position: absolute !important;
+               width: 1px;
+               height: 1px;
+               padding: 0;
+               margin: -1px;
+               overflow: hidden;
+               clip: rect(0, 0, 0, 0);
+               white-space: nowrap;
+               border: 0;
             }
 
             @media (max-width: 991px) {
@@ -84,13 +109,13 @@ const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps)
                   line-height: 1.7;
                }
 
-               .legal-content h2 {
+               .legal-page:not(.legal-page--embed) .legal-content h2 {
                   font-size: 18px !important;
                   margin-top: 28px !important;
                   margin-bottom: 10px !important;
                }
 
-               .legal-content h3 {
+               .legal-page:not(.legal-page--embed) .legal-content h3 {
                   font-size: 16px !important;
                   margin-top: 18px !important;
                }
@@ -102,7 +127,7 @@ const LegalPageLayout = ({ title, lastUpdated, children }: LegalPageLayoutProps)
                   padding-bottom: 48px;
                }
 
-               .legal-content h2 {
+               .legal-page:not(.legal-page--embed) .legal-content h2 {
                   font-size: 17px !important;
                }
             }
