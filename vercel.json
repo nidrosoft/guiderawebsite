@@ -1,5 +1,8 @@
 {
-  "rewrites": [{ "source": "/invite/:code", "destination": "/invite.html" }],
+  "rewrites": [
+    { "source": "/invite/:code", "destination": "/invite.html" },
+    { "source": "/referral/:code", "destination": "/referral.html" }
+  ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
