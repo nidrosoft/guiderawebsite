@@ -48,10 +48,19 @@ const LegalPageLayout = ({ title, lastUpdated, embed = false, children }: LegalP
                color: #000;
             }
 
+            .legal-page-container > .legal-page-title:last-of-type {
+               margin-bottom: 28px;
+            }
+
             .legal-page-updated {
                color: #888;
                font-size: 14px;
                margin-bottom: 40px;
+            }
+
+            .legal-page-updated + .legal-content,
+            .legal-page-title + .legal-content {
+               /* spacing handled above */
             }
 
             .legal-content {

@@ -40,8 +40,8 @@ const Footer = () => {
                   <ul className="footer-nav-link style-none">
                     <li><Link href="/about">About Us</Link></li>
                     <li><Link href="/our-story">Our Story</Link></li>
-                    <li><a href="mailto:hello@guidera.app">Contact</a></li>
-                    <li><a href="#">Press</a></li>
+                    <li><Link href="/support">Support</Link></li>
+                    <li><a href="mailto:hello@guidera.one">Contact</a></li>
                   </ul>
                 </div>
               </div>
