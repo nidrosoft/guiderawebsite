@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "travel app with AI",
     "Guidera",
   ],
-  authors: [{ name: "Guidera Inc." }],
-  creator: "Guidera Inc.",
-  publisher: "Guidera Inc.",
+  authors: [{ name: "Nitrosoft LLC" }],
+  creator: "Nitrosoft LLC",
+  publisher: "Nitrosoft LLC",
   robots: {
     index: true,
     follow: true,

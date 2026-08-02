@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="copyright-text text-center m0" style={{ position: 'relative', bottom: 'auto', left: 'auto', marginTop: '40px', paddingTop: '25px', borderTop: '1px solid #eee', clear: 'both', width: '100%' }}>
-              &copy; 2026 Guidera Inc. All rights reserved. &nbsp;&nbsp; Made with ❤️ for travelers by{' '}
+              &copy; 2026 Nitrosoft LLC. Guidera is a product of Nitrosoft LLC. &nbsp;&nbsp; Made with ❤️ for travelers by{' '}
               <Link href="https://www.linkedin.com/in/cyriac-zeh/" target="_blank" rel="noopener noreferrer" style={{ color: '#3FC39E', fontWeight: 600 }}>
                 Cyriac Zeh
               </Link>

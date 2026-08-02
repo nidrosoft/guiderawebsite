@@ -106,7 +106,8 @@ const LegalPageLayout = ({ title, lastUpdated, embed = false, children }: LegalP
                }
 
                .legal-page-title {
-                  display: none;
+                  display: block;
+                  font-size: 32px;
                }
 
                .legal-page-updated {
@@ -138,6 +139,10 @@ const LegalPageLayout = ({ title, lastUpdated, embed = false, children }: LegalP
 
                .legal-page:not(.legal-page--embed) .legal-content h2 {
                   font-size: 17px !important;
+               }
+
+               .legal-page-title {
+                  font-size: 28px;
                }
             }
          `}</style>

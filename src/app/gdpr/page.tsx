@@ -8,15 +8,15 @@ export const metadata: Metadata = {
 
 const GDPRPage = () => {
    return (
-      <LegalPageLayout title="GDPR Compliance" lastUpdated="March 25, 2026">
+      <LegalPageLayout title="GDPR Compliance" lastUpdated="August 1, 2026">
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>1. Our Commitment</h2>
          <p>
-            Guidera Inc. is committed to protecting the rights and freedoms of individuals in the European Economic Area (EEA) under the General Data Protection Regulation (GDPR). This page outlines how we comply with GDPR requirements.
+            Nitrosoft LLC, which provides Guidera, is committed to protecting the rights and freedoms of individuals in the European Economic Area (EEA) under the General Data Protection Regulation (GDPR). This page outlines how we comply with GDPR requirements.
          </p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>2. Data Controller</h2>
          <p>
-            Guidera Inc. acts as the data controller for personal data collected through the Service. For any data protection inquiries, you may contact us at <a href="mailto:privacy@guidera.app" style={{ color: '#3FC39E' }}>privacy@guidera.app</a>.
+            Nitrosoft LLC acts as the data controller for personal data collected through the Service. For any data protection inquiries, you may contact us at <a href="mailto:privacy@guidera.one" style={{ color: '#3FC39E' }}>privacy@guidera.one</a>.
          </p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>3. Legal Basis for Processing</h2>
@@ -51,7 +51,7 @@ const GDPRPage = () => {
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>7. Exercising Your Rights</h2>
          <p>
-            To exercise any of your GDPR rights, please contact us at <a href="mailto:privacy@guidera.app" style={{ color: '#3FC39E' }}>privacy@guidera.app</a>. We will respond to your request within 30 days. If you are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.
+            To exercise any of your GDPR rights, please contact us at <a href="mailto:privacy@guidera.one" style={{ color: '#3FC39E' }}>privacy@guidera.one</a>. We will respond within the period required by applicable law. If you are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.
          </p>
       </LegalPageLayout>
    )

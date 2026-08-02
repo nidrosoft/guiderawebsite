@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import LegalPageLayout from "@/components/common/LegalPageLayout"
 
 export const metadata: Metadata = {
@@ -22,8 +23,8 @@ const DeleteAccountPage = () => {
             accessed with <strong>Sign in with Apple</strong>, <strong>Google</strong>, <strong>Facebook</strong>, or a{" "}
             <strong>phone number</strong> (one-time code). You do not need to keep the Guidera app installed to request
             deletion. Account deletion is governed by this page together with our{" "}
-            <a href="/privacy" style={LINK}>Privacy Policy</a> and{" "}
-            <a href="/terms" style={LINK}>Terms of Service</a>.
+            <Link href="/privacy" style={LINK}>Privacy Policy</Link> and{" "}
+            <Link href="/terms" style={LINK}>Terms of Service</Link>.
          </p>
 
          <div style={{ background: "#F4FBF8", border: "1px solid #C9EFE2", borderRadius: "12px", padding: "20px 24px", margin: "24px 0" }}>
@@ -108,7 +109,7 @@ const DeleteAccountPage = () => {
          <p>
             Any retained data is kept only as long as necessary for the purpose that requires retention, and is otherwise
             deleted or anonymized. For full details, see our{" "}
-            <a href="/privacy" style={LINK}>Privacy Policy</a> (including the Data Retention section).
+            <Link href="/privacy" style={LINK}>Privacy Policy</Link> (including the Data Retention section).
          </p>
 
          <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "12px", marginTop: "32px", color: "#000" }}>4. Deletion Timeline and Effect</h2>
@@ -201,7 +202,7 @@ const DeleteAccountPage = () => {
             <li><strong>RevenueCat</strong> and the <strong>Apple App Store</strong> — subscription status and purchase entitlements (Apple may retain purchase records under its own policies)</li>
             <li><strong>Mixpanel</strong> — product analytics</li>
             <li><strong>Sentry</strong> — crash and performance diagnostics</li>
-            <li><strong>Entrust / Onfido</strong> — identity verification for Local Guide applicants (ID documents are processed by the verification provider; we do not store copies of government ID images)</li>
+            <li><strong>Didit</strong> — identity verification for Local Guide applicants (ID documents are processed by the verification provider; we do not store copies of government ID images)</li>
          </ul>
 
          <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "12px", marginTop: "32px", color: "#000" }}>7. Subscriptions and Billing</h2>
@@ -221,8 +222,8 @@ const DeleteAccountPage = () => {
                apps.apple.com/account/subscriptions
             </a>
             . Refund requests for App Store purchases are handled by Apple under Apple&apos;s policies. See our{" "}
-            <a href="/terms" style={LINK}>Terms of Service</a> and{" "}
-            <a href="/pricing" style={LINK}>Pricing</a> page for subscription terms.
+            <Link href="/terms" style={LINK}>Terms of Service</Link> and{" "}
+            <Link href="/pricing" style={LINK}>Pricing</Link> page for subscription terms.
          </p>
 
          <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "12px", marginTop: "32px", color: "#000" }}>8. Shared Content and Other Users</h2>
@@ -248,7 +249,7 @@ const DeleteAccountPage = () => {
             Depending on where you live, you may have additional rights to access, correct, delete, or obtain a copy of
             your personal information, or to object to or restrict certain processing. California residents and individuals
             in the EEA/UK have specific rights described in our{" "}
-            <a href="/privacy" style={LINK}>Privacy Policy</a>. Exercising the right to deletion through this page or the
+            <Link href="/privacy" style={LINK}>Privacy Policy</Link>. Exercising the right to deletion through this page or the
             in-app flow is one way to submit a deletion request.
          </p>
          <p>

@@ -16,7 +16,7 @@ const jsonLd = {
   url: "https://guidera.one",
   author: {
     "@type": "Organization",
-    name: "Guidera Inc.",
+    name: "Nitrosoft LLC",
     url: "https://guidera.one",
   },
   offers: {
