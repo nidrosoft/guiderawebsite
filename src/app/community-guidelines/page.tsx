@@ -54,10 +54,10 @@ const CommunityGuidelinesPage = () => {
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>6. Local Guide Standards</h2>
          <p>
-            Local Guides are held to a higher standard because travelers trust them with their safety and experience.
+            Local Guides are held to a higher standard because travelers may rely on the information they provide. Identity verification confirms only the result reported by Guidera&apos;s verification provider; it is not a background check, professional-license check, endorsement, or guarantee.
          </p>
-         <p><strong>Do:</strong> Accurately represent your services, pricing, and availability. Respond to inquiries promptly and professionally. Maintain the accuracy of your profile and service listings. Respect agreed-upon arrangements with travelers. Report any safety concerns involving other guides or users.</p>
-         <p><strong>Don&apos;t:</strong> Misrepresent your services or qualifications. Engage in price gouging, bait-and-switch tactics, or deceptive practices. Request payment outside of agreed-upon channels. Use your verified status to pressure or manipulate travelers.</p>
+         <p><strong>Do:</strong> Accurately represent your identity, services, pricing, qualifications, location, and availability. Maintain every registration, license, permit, tax obligation, or insurance policy required where you operate. Disclose material terms and conflicts. Respect traveler boundaries and report safety concerns.</p>
+         <p><strong>Don&apos;t:</strong> Misrepresent your services, verification, qualifications, or authority. Engage in bait-and-switch tactics, hidden charges, coercion, harassment, or deceptive practices. Offer illegal, sexual, exploitative, dangerous, discriminatory, or regulated services without every required authorization. Claim that Guidera employs, endorses, insures, or guarantees you. Guidera does not process Local Guide service payments.</p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>7. Prohibited Content</h2>
          <p>The following content is strictly prohibited on Guidera:</p>
@@ -81,7 +81,7 @@ const CommunityGuidelinesPage = () => {
          <p>Depending on the severity and frequency of the violation, we may issue a warning to the user, remove the offending content, temporarily suspend the user&apos;s account, permanently ban the user from the platform, or report the activity to law enforcement (in cases involving illegal activity or imminent danger).</p>
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>Appeals</h3>
-         <p>If you believe an enforcement action was made in error, you may appeal by contacting <a href="mailto:appeals@guidera.one" style={{ color: '#3FC39E' }}>appeals@guidera.one</a> within thirty (30) days. We will review your appeal and respond within fourteen (14) business days.</p>
+         <p>If you believe an enforcement action was made in error, you may appeal by contacting <a href="mailto:appeals@guidera.one" style={{ color: '#3FC39E' }}>appeals@guidera.one</a> within thirty (30) days. We prioritize urgent safety matters and aim to review appeals promptly, but timing depends on severity, available evidence, and legal or safety obligations.</p>
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>9. Your Responsibility</h2>
          <p>
