@@ -29,6 +29,23 @@ function sanitizeIubendaHtml(html: string): string {
       .replace(/\son\w+\s*=\s*[^\s>]+/gi, "")
 }
 
+/**
+ * Iubenda's generic UGC clause says the owner does not filter or moderate
+ * content. That boilerplate is inaccurate for Guidera, whose community writes
+ * are screened before publication and remain reportable after publication.
+ * Keep this narrow amendment until the same clause is disabled in Iubenda.
+ */
+function applyGuideraTermsAmendments(html: string): string {
+   return html.replace(
+      "<p>Users are solely liable for any content they upload, post, share, or provide through this Application. Users acknowledge and accept that <strong>the Owner does not filter or moderate such content</strong>.</p>",
+      "<p>Users remain responsible for content they upload, post, share, or provide through this Application. Guidera uses automated pre-publication safety filters and human review of user reports to enforce these Terms and the Community Guidelines. These controls reduce risk but cannot guarantee that every violation will be detected before publication.</p>",
+   )
+}
+
+function applyGuideraEntityName(html: string): string {
+   return html.replaceAll("Nidrosoft LLC", "Nitrosoft LLC")
+}
+
 export async function fetchIubendaDocument(type: IubendaDocType): Promise<string> {
    const res = await fetch(API_PATH[type], {
       next: { revalidate: 3600 },
@@ -44,5 +61,7 @@ export async function fetchIubendaDocument(type: IubendaDocType): Promise<string
       throw new Error(`iubenda ${type} document response was empty`)
    }
 
-   return sanitizeIubendaHtml(data.content)
+   const entityCorrected = applyGuideraEntityName(data.content)
+   const content = type === "terms" ? applyGuideraTermsAmendments(entityCorrected) : entityCorrected
+   return sanitizeIubendaHtml(content)
 }

@@ -7,7 +7,7 @@
 
 ## Welcome to Guidera
 
-These Terms of Service ("Terms") govern your access to and use of the Guidera mobile application, website at guidera.one, and all related services (collectively, the "Service") operated by Guidera ("we," "us," or "our").
+These Terms of Service ("Terms") govern your access to and use of the Guidera mobile application, website at guidera.one, and all related services (collectively, the "Service") operated by Nitrosoft LLC under the Guidera product name ("we," "us," or "our").
 
 **By downloading, accessing, or using Guidera, you agree to be bound by these Terms.** If you do not agree, do not use the Service.
 
@@ -99,7 +99,7 @@ You agree not to submit Content that is false, misleading, defamatory, obscene, 
 
 ### 5.3 Content Moderation
 
-We reserve the right, but have no obligation, to monitor, review, edit, or remove any Content at our sole discretion. We may remove Content that violates these Terms or our Community Guidelines.
+Guidera uses automated pre-publication safety filters and human review of user reports to help enforce these Terms and our Community Guidelines. These controls reduce risk but cannot guarantee that every violation will be detected before publication. We may reject, hold, redact, restrict, or remove Content and may limit or terminate accounts that violate our rules.
 
 ---
 
@@ -248,18 +248,23 @@ We may suspend or terminate your account and access to the Service at any time, 
 ## 18. General Provisions
 
 ### 18.1 Governing Law
+
 These Terms shall be governed by the laws of the State of Delaware, United States, without regard to conflict of law principles.
 
 ### 18.2 Entire Agreement
+
 These Terms, together with our Privacy Policy and Community Guidelines, constitute the entire agreement between you and Guidera regarding the Service.
 
 ### 18.3 Severability
+
 If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
 
 ### 18.4 Waiver
+
 Our failure to enforce any right or provision of these Terms shall not constitute a waiver of that right or provision.
 
 ### 18.5 Assignment
+
 You may not assign or transfer your rights under these Terms without our prior written consent. We may assign our rights and obligations without restriction.
 
 ---
@@ -274,4 +279,4 @@ Website: https://guidera.one
 
 ---
 
-*© 2026 Guidera. All rights reserved.*
+_© 2026 Guidera. All rights reserved._

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CommunityGuidelinesPage = () => {
    return (
-      <LegalPageLayout title="Community Guidelines" lastUpdated="March 26, 2026">
+      <LegalPageLayout title="Community Guidelines" lastUpdated="August 1, 2026">
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>Our Community Philosophy</h2>
          <p>
             Guidera is built on the belief that travel is better when people help each other. Our community — travelers, Local Guides, and explorers from every corner of the world — is what makes Guidera more than just an app. These guidelines exist to keep that community safe, welcoming, and genuinely useful for everyone.
@@ -73,9 +73,9 @@ const CommunityGuidelinesPage = () => {
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>8. Reporting and Enforcement</h2>
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>How to Report</h3>
          <p>
-            If you encounter content or behavior that violates these guidelines, use the in-app <strong>Report</strong> button available on all profiles, posts, reviews, and messages, or email us at <a href="mailto:safety@guidera.one" style={{ color: '#3FC39E' }}>safety@guidera.one</a> with details.
+            If you encounter content or behavior that violates these guidelines, use the in-app <strong>Report</strong> action available on profiles, posts, individual photos, comments and replies, direct and group messages, groups, activities, events, guides, and reviews, or email us at <a href="mailto:feedback@guidera.one" style={{ color: '#3FC39E' }}>feedback@guidera.one</a> with details.
          </p>
-         <p>All reports are reviewed by our team. We take every report seriously.</p>
+         <p>Guidera applies automated checks to user text before publication. Reports enter a moderation queue, and high-risk or repeated reports receive elevated priority and are routed to the moderation duty contact. Automated controls reduce risk but do not guarantee that every violation will be detected.</p>
 
          <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px', marginTop: '20px', color: '#222' }}>What Happens When Guidelines Are Violated</h3>
          <p>Depending on the severity and frequency of the violation, we may issue a warning to the user, remove the offending content, temporarily suspend the user&apos;s account, permanently ban the user from the platform, or report the activity to law enforcement (in cases involving illegal activity or imminent danger).</p>
@@ -92,7 +92,7 @@ const CommunityGuidelinesPage = () => {
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>10. Contact Us</h2>
          <p>Questions about these Community Guidelines? Reach us at:</p>
          <p>
-            <strong>Guidera</strong><br />
+            <strong>Guidera, a product of Nitrosoft LLC</strong><br />
             Email: <a href="mailto:community@guidera.one" style={{ color: '#3FC39E' }}>community@guidera.one</a><br />
             Website: <a href="https://guidera.one" style={{ color: '#3FC39E' }}>https://guidera.one</a>
          </p>

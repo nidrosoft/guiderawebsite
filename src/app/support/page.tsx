@@ -165,7 +165,7 @@ const SupportPage = () => {
                </a>
             </p>
             <p style={{ marginBottom: "8px", color: "#555" }}>
-               Messages are handled by <strong>Cyriac from Guidera</strong> (Nidrosoft LLC).
+               Messages are handled by <strong>Cyriac from Guidera</strong> (Nitrosoft LLC).
                We typically reply within <strong>1–2 business days</strong>.
             </p>
             <p style={{ marginBottom: "24px", color: "#555", fontSize: "15px" }}>
@@ -228,9 +228,9 @@ const SupportPage = () => {
                Developer information
             </h2>
             <p style={{ marginBottom: "8px" }}>
-               <strong>Nidrosoft LLC</strong>
+               <strong>Nitrosoft LLC</strong>
                <br />
-               Guidera is developed by Nidrosoft LLC.
+               Guidera is developed by Nitrosoft LLC.
                <br />
                Founder: Cyriac Zeh
             </p>
@@ -263,7 +263,7 @@ const SupportPage = () => {
                </a>
             </p>
             <p style={{ marginTop: "20px", fontSize: "14px", color: "#888" }}>
-               © {new Date().getFullYear()} Nidrosoft LLC. All rights reserved.
+               © {new Date().getFullYear()} Nitrosoft LLC. All rights reserved.
             </p>
          </section>
       </LegalPageLayout>

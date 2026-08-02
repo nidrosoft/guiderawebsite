@@ -1,7 +1,7 @@
 # Guidera — Community Guidelines
 
 **Effective Date:** March 26, 2026
-**Last Updated:** March 26, 2026
+**Last Updated:** August 1, 2026
 
 ---
 
@@ -99,9 +99,9 @@ The following content is strictly prohibited on Guidera:
 
 ### How to Report
 
-If you encounter content or behavior that violates these guidelines, use the in-app **Report** button available on all profiles, posts, reviews, and messages, or email us at safety@guidera.one with details.
+If you encounter content or behavior that violates these guidelines, use the in-app **Report** action available on profiles, posts, individual photos, comments and replies, direct and group messages, groups, activities, events, guides, and reviews, or email feedback@guidera.one with details.
 
-All reports are reviewed by our team. We take every report seriously.
+Guidera applies automated checks to user text before publication. Reports enter a moderation queue, and high-risk or repeated reports receive elevated priority and are routed to the moderation duty contact. Automated controls reduce risk but do not guarantee that every violation will be detected.
 
 ### What Happens When Guidelines Are Violated
 
@@ -125,10 +125,10 @@ Thank you for being part of the Guidera community.
 
 Questions about these Community Guidelines? Reach us at:
 
-**Guidera**
+**Guidera, a product of Nitrosoft LLC**
 Email: community@guidera.one
 Website: https://guidera.one
 
 ---
 
-*© 2026 Guidera. All rights reserved.*
+_© 2026 Guidera. All rights reserved._

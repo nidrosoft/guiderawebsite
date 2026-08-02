@@ -11,7 +11,7 @@ const LINK = { color: "#3FC39E" } as const
 
 const DeleteAccountPage = () => {
    return (
-      <LegalPageLayout title="Delete Your Account" lastUpdated="July 21, 2026">
+      <LegalPageLayout title="Delete Your Account" lastUpdated="August 1, 2026">
          <p>
             This page explains how to permanently delete your Guidera account and the personal data associated with it.
             It is intended to meet Apple App Store account-deletion requirements and to give you clear information about
@@ -42,7 +42,8 @@ const DeleteAccountPage = () => {
             <li>Open the Guidera app and sign in with the account you want to delete.</li>
             <li>Go to <strong>Settings</strong>.</li>
             <li>Tap <strong>Account</strong>, then <strong>Delete Account</strong>.</li>
-            <li>Review the confirmation prompt and confirm. Your account is then scheduled for permanent deletion.</li>
+            <li>Review the final warning, type <strong>DELETE</strong>, and confirm. Guidera then verifies your active session and starts the server-authoritative deletion process.</li>
+            <li>The app shows completion only after Guidera confirms database, uploaded-file, subscription-attribution, and authentication-identity cleanup. If any required step fails, the app keeps you signed in and asks you to retry.</li>
          </ol>
 
          <h3 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "8px", marginTop: "20px", color: "#222" }}>1.2 Request Deletion Without the App</h3>
@@ -113,9 +114,10 @@ const DeleteAccountPage = () => {
          <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "12px", marginTop: "32px", color: "#000" }}>4. Deletion Timeline and Effect</h2>
          <h3 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "8px", marginTop: "20px", color: "#222" }}>4.1 When Deletion Happens</h3>
          <p>
-            When you confirm deletion in the app, or when we verify an email deletion request, we begin the deletion
-            process. We delete or anonymize your personal information within thirty (30) days, except where limited
-            retention is required as described in Section 3.
+            In-app deletion normally completes during the confirmed request. If a provider is temporarily unavailable,
+            Guidera records a resumable deletion state and does not tell the app that deletion succeeded. Verified email
+            requests are completed within thirty (30) days, except where limited retention is required as described in
+            Section 3.
          </p>
          <p>
             During processing, your account access is disabled. You should not expect to recover the account or its
@@ -148,10 +150,11 @@ const DeleteAccountPage = () => {
          <h3 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "8px", marginTop: "20px", color: "#222" }}>5.1 Sign in with Apple</h3>
          <p>
             If you signed in with Apple, we may receive a unique Apple user identifier and the name and email address you
-            authorize Apple to share (which may be a private &quot;Hide My Email&quot; relay address). Deleting Guidera
-            does not by itself revoke the Sign in with Apple connection in Apple&apos;s systems. To also stop sharing your
-            Apple ID with Guidera, go to <strong>Settings &gt; your name &gt; Sign in with Apple</strong> on your iOS
-            device, select Guidera, and choose to stop using Apple ID with that app.
+            authorize Apple to share (which may be a private &quot;Hide My Email&quot; relay address). When Guidera has a
+            valid Apple token and the required server credentials, the deletion process requests token revocation from
+            Apple. If programmatic revocation is unavailable, the app tells you to finish the Apple privacy step in
+            <strong> Settings &gt; your name &gt; Sign in with Apple</strong>: select Guidera and choose to stop using
+            Apple ID with the app. Your Guidera data is still deleted even if that manual Apple step is required.
          </p>
 
          <h3 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "8px", marginTop: "20px", color: "#222" }}>5.2 Google</h3>
@@ -256,7 +259,7 @@ const DeleteAccountPage = () => {
          <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "12px", marginTop: "32px", color: "#000" }}>11. Contact Us</h2>
          <p>If you have questions about account deletion, data retention, or this page, contact us at:</p>
          <p>
-            <strong>Guidera</strong><br />
+            <strong>Guidera, a product of Nitrosoft LLC</strong><br />
             Email: <a href="mailto:privacy@guidera.one" style={LINK}>privacy@guidera.one</a><br />
             Website: <a href="https://guidera.one/delete-account" style={LINK}>https://guidera.one/delete-account</a>
          </p>
