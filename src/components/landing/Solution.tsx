@@ -1,10 +1,10 @@
 const checkmarks = [
    "Plan in minutes, not hours",
-   "Stay safe with real-time alerts",
-   "Book everything in one place",
-   "Never get lost in translation",
-   "Track every expense automatically",
-   "Understand every culture you visit",
+   "Review informational safety context",
+   "Search and compare travel options",
+   "Use camera-assisted translation",
+   "Track expenses and scan receipts",
+   "Prepare for local customs",
 ];
 
 const Solution = () => {
@@ -61,8 +61,8 @@ const Solution = () => {
                   margin: '0 auto 24px',
                }}
             >
-               One app. Your entire trip.{' '}
-               <span style={{ color: '#3FC39E' }}>Intelligently planned.</span>
+               Plan, compare, and prepare.{' '}
+               <span style={{ color: '#3FC39E' }}>With AI-assisted context.</span>
             </h2>
 
             {/* Body */}
@@ -77,10 +77,10 @@ const Solution = () => {
                   margin: '0 auto 50px',
                }}
             >
-               Guidera is the first travel platform that combines AI trip planning,
-               real-time intelligence, booking management, and a global traveler
-               community — all in one place. It doesn&apos;t just organize your trip.
-               It understands you.
+               Guidera brings together AI-assisted trip planning, travel search and
+               comparison, destination context, packing, expenses, and traveler
+               community features. Travel purchases are completed with the external
+               provider, and important guidance should be verified with primary sources.
             </p>
 
             {/* Checkmarks grid */}

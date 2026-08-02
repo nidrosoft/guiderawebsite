@@ -22,11 +22,11 @@ const freeFeatures = [
 
 const proFeatures = [
    "Everything in Free, unlocked & unlimited",
-   "Unlimited AI Trip Snapshots with live prices & cost estimates",
-   "Unlimited personalized Journey Briefings",
+   "AI Trip Snapshots with provider-sourced prices and estimates",
+   "Personalized Journey Briefings",
    "Smart Trip — one-tap complete AI travel plans",
-   "Unlimited AI Chat grounded in your trip",
-   "AI Vision — real-time translation of menus, signs & scenes",
+   "AI Chat grounded in your trip",
+   "AI Vision — camera-assisted translation of menus, signs & scenes",
    "Trip collaboration with fellow travelers",
    "Expense tracking, receipt scanning & cost splitting",
    "Synced photo travel journal",
@@ -64,9 +64,8 @@ const PricingPage = () => {
             <div style={{ background: "#FAFAFA", borderRadius: "16px", padding: "32px", margin: "48px 0", textAlign: "center" }}>
                <h2 style={{ fontSize: "22px", fontWeight: 700, marginBottom: "12px" }}>Who is Guidera Pro for?</h2>
                <p style={{ fontSize: "16px", color: "#555", maxWidth: "760px", margin: "0 auto", lineHeight: 1.8 }}>
-                  Pro is for travelers who want their whole trip handled — unlimited custom journey briefings tailored to
-                  your passport and plans, an always-on AI travel concierge, verified Local Guides, and the premium tools
-                  to plan, collaborate, and navigate every journey with confidence.
+                  Pro is for travelers who want access to expanded AI planning, personalized journey briefings,
+                  trip-aware AI chat, collaboration, expenses, journal, and camera-assisted translation tools.
                </p>
             </div>
 

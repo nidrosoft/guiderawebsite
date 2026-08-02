@@ -5,7 +5,7 @@ const steps = [
    {
       number: "01",
       title: "Download the app",
-      desc: "Available on iOS and Android. Get set up in under 2 minutes.",
+      desc: "Install Guidera on iOS and create an account or explore available guest features.",
       icon: (
          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
@@ -16,7 +16,7 @@ const steps = [
    {
       number: "02",
       title: "Tell us about you",
-      desc: "Your travel style, diet, health, profession — Guidera learns what matters to you.",
+      desc: "Choose the travel preferences and optional profile details you want Guidera to use.",
       icon: (
          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -28,7 +28,7 @@ const steps = [
    {
       number: "03",
       title: "Start exploring",
-      desc: "Tap \u201CGenerate Smart Plan\u201D and watch your entire trip come together instantly.",
+      desc: "Create a trip, request AI planning, or search and compare options before continuing with an external provider.",
       icon: (
          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -117,7 +117,7 @@ const HowItWorks = () => {
                   Get started in 3 simple steps
                </h2>
                <p style={{ fontSize: '17px', color: '#6B7280', lineHeight: 1.6, margin: 0 }}>
-                  No complicated setup. No learning curve. Just download, personalize, and let Guidera handle the rest.
+                  Install on iOS, choose what to personalize, and use the planning or comparison tools you need.
                </p>
             </div>
 

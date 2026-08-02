@@ -2,8 +2,8 @@ import Home from "@/components/landing";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Guidera — Your Entire Trip, Before You Even Plan It",
-  description: "Guidera is the all-in-one AI travel app that plans your entire trip — personalized itineraries, real-time safety alerts, cultural insights, smart packing lists, and a global traveler community. Join 10,000+ on the waitlist.",
+  title: "Guidera — AI-Assisted Travel Planning for iOS",
+  description: "Guidera is an AI-assisted iOS travel app for trip planning, travel search and comparison, destination context, packing, expenses, and traveler community features.",
 };
 
 const jsonLd = {
@@ -11,8 +11,8 @@ const jsonLd = {
   "@type": "SoftwareApplication",
   name: "Guidera",
   applicationCategory: "TravelApplication",
-  operatingSystem: "iOS, Android",
-  description: "AI-powered all-in-one travel app — personalized itineraries, safety alerts, cultural insights, smart packing, and a global traveler community.",
+  operatingSystem: "iOS",
+  description: "AI-assisted iOS travel planning, external-provider search and comparison, destination context, packing, expenses, and traveler community features.",
   url: "https://guidera.one",
   author: {
     "@type": "Organization",
@@ -24,12 +24,6 @@ const jsonLd = {
     price: "0",
     priceCurrency: "USD",
     availability: "https://schema.org/PreOrder",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    ratingCount: "10847",
-    bestRating: "5",
   },
 };
 

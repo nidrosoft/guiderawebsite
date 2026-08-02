@@ -13,51 +13,51 @@ import packingImg from "@/assets/images/assets/packing.png"
 const features = [
    {
       emoji: "📅",
-      title: "Plan your perfect trip in minutes, not hours",
-      desc: "Tell Guidera where you want to go, your travel style, and budget. Get a complete day-by-day itinerary generated in seconds — not hours.",
-      bullets: ["Personalized day-by-day itineraries", "Smart scheduling & budget optimization", "One-tap Smart Plan generation"],
+      title: "Build an AI-assisted trip plan",
+      desc: "Tell Guidera where you want to go, your travel dates, preferences, and budget to generate a draft day-by-day itinerary.",
+      bullets: ["Personalized itinerary drafts", "Scheduling and budget context", "One-tap Smart Plan request"],
       img: planningImg,
    },
    {
       emoji: "🛡️",
-      title: "Travel with confidence, not worry",
-      desc: "Get instant alerts about unsafe areas, scams, and emergencies. Our engine monitors your location and keeps you informed 24/7.",
-      bullets: ["Color-coded danger zones", "Scam & emergency alerts", "One-tap SOS"],
+      title: "Review destination safety context",
+      desc: "View informational safety zones, scam awareness, emergency contacts, and nearby context. Guidera does not continuously monitor you or replace emergency services.",
+      bullets: ["Informational safety zones", "Scam and advisory context", "Direct access to local emergency calling"],
       img: safetyImg,
    },
    {
       emoji: "🙏",
-      title: "Never accidentally offend again",
-      desc: "Learn the do\u2019s and don\u2019ts before you arrive. Cultural insights, etiquette tips, and local customs for every destination.",
+      title: "Prepare for local customs",
+      desc: "Review AI-assisted cultural insights, etiquette tips, dress context, and local customs for your destination, then verify sensitive guidance locally.",
       bullets: ["Do\u2019s & don\u2019ts per country", "Tipping & dress code guides", "Local etiquette tips"],
       img: cultureImg,
    },
    {
       emoji: "✈️",
-      title: "Flights, hotels, cars, experiences. One app.",
-      desc: "Stop juggling multiple apps. Book everything in one place, compare prices across 50+ providers, and see your entire trip at a glance.",
-      bullets: ["Compare 50+ providers", "Bundle deals & discounts", "Manage all bookings in one place"],
+      title: "Search and compare travel options",
+      desc: "Explore flights, stays, cars, and experiences from available travel sources. Guidera sends you to the external provider to verify terms and complete any purchase.",
+      bullets: ["Provider-attributed results", "Price and availability comparison", "External-provider checkout"],
       img: bookingImg,
    },
    {
       emoji: "📸",
       title: "Point your camera. Understand everything.",
-      desc: "Scan menus, signs, and documents in any language. Instant translations overlaid right on your screen.",
-      bullets: ["Real-time camera translation", "Menu & sign scanning", "100+ languages supported"],
+      desc: "Use your camera to request AI-assisted translation of supported menus, signs, and documents. Translation can be inaccurate, so verify important details.",
+      bullets: ["Camera-assisted translation", "Menu and sign scanning", "Source and translated text"],
       img: translateImg,
    },
    {
       emoji: "💰",
       title: "Know exactly where your money goes",
-      desc: "Track every expense in real-time with auto currency conversion. Set budgets, scan receipts, and never go over budget again.",
-      bullets: ["Auto currency conversion", "Receipt scanning", "Budget alerts & insights"],
+      desc: "Record expenses, convert supported currencies, set budgets, and scan receipts. Review extracted amounts and conversion estimates for accuracy.",
+      bullets: ["Currency conversion estimates", "Receipt scanning", "Budget tracking and insights"],
       img: expensesImg,
    },
    {
       emoji: "🧳",
       title: "Pack smarter, not heavier",
-      desc: "Weather-aware. Profession-aware. Allergy-aware. Your packing list adapts to your destination, your health, and your travel style.",
-      bullets: ["Weather-based suggestions", "Profession & health-aware", "Shared lists for groups"],
+      desc: "Create packing suggestions using your destination, forecast context, travel preferences, and optional profile details.",
+      bullets: ["Weather-aware suggestions", "Preference-aware suggestions", "Shared lists for groups"],
       img: packingImg,
    },
 ];
@@ -181,10 +181,10 @@ const BlockFeatureTwo = () => {
                   Core Features
                </div>
                <h2 style={{ fontSize: isMobile ? '36px' : '48px', fontWeight: 700, lineHeight: 1.2, marginBottom: '20px' }}>
-                  Everything you need. One app.
+                  Planning tools in one iOS app
                </h2>
                <p style={{ fontSize: '18px', color: '#6B7280', maxWidth: '620px', margin: '0 auto', lineHeight: 1.7 }}>
-                  Guidera combines AI trip planning, real-time safety intelligence, cultural guidance, unified booking, and more — so you can stop juggling 7 apps and start enjoying the journey.
+                  Guidera combines AI-assisted planning, travel search and comparison, informational safety and cultural context, packing, expenses, and community tools in one iOS app.
                </p>
             </div>
          </div>

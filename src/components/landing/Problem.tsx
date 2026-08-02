@@ -74,7 +74,7 @@ const Problem = () => {
                   margin: '0 auto 60px',
                }}
             >
-               You use 7 apps to plan one trip.{' '}
+               Trip details often live across several tools.{' '}
                <span style={{ color: 'rgba(0,0,0,0.4)' }}>
                   And none of them talk to each other.
                </span>
@@ -159,7 +159,7 @@ const Problem = () => {
                   marginRight: 'auto',
                }}
             >
-               What if one app handled all of it — and actually knew you?
+               What if planning, comparison, and destination context were easier to organize?
             </p>
          </div>
       </div>

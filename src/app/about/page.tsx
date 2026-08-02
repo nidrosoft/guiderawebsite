@@ -15,33 +15,33 @@ const AboutPage = () => {
             <h1 style={{ fontSize: '42px', fontWeight: 700, marginBottom: '24px' }}>About Guidera</h1>
 
             <p style={{ fontSize: '18px', lineHeight: 1.8, color: '#444', marginBottom: '32px' }}>
-               Guidera is the first travel platform that combines AI trip planning, real-time safety intelligence, cultural insights, booking management, and a global traveler community — all in one app.
+               Guidera is an AI-assisted iOS travel app for trip planning, travel search and comparison, destination context, packing, expenses, and traveler community features. Guidera is a product of Nitrosoft LLC.
             </p>
 
             <h2 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>Our Mission</h2>
             <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#444', marginBottom: '32px' }}>
-               We believe travel should be effortless, safe, and culturally respectful. Our mission is to give every traveler — solo or group, first-time or frequent — the tools to explore the world with confidence. No more juggling 7 apps. No more guesswork. Just one intelligent companion that knows you, your style, and your destination.
+               Our mission is to help travelers prepare thoughtfully by bringing useful planning and destination tools together. Guidera&apos;s AI, safety, visa, health, translation, and price information is informational and should be verified with official or primary sources when it matters.
             </p>
 
             <h2 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>What We Do</h2>
             <ul style={{ fontSize: '16px', lineHeight: 2.2, color: '#444', marginBottom: '32px', paddingLeft: '20px' }}>
-               <li><strong>AI Trip Planning</strong> — Personalized day-by-day itineraries generated in seconds</li>
-               <li><strong>Safety Intelligence</strong> — Real-time alerts, danger zones, and one-tap SOS</li>
-               <li><strong>Cultural Intelligence</strong> — Do&apos;s and don&apos;ts, etiquette, and local customs for every destination</li>
-               <li><strong>Unified Booking</strong> — Flights, hotels, cars, and experiences in one place</li>
-               <li><strong>Smart Packing</strong> — Weather-aware, profession-aware packing lists</li>
-               <li><strong>Expense Tracking</strong> — Auto currency conversion and budget management</li>
-               <li><strong>AR Translation</strong> — Point your camera, understand everything</li>
+               <li><strong>AI Trip Planning</strong> — Personalized itinerary drafts using the trip context you provide</li>
+               <li><strong>Safety Context</strong> — Informational zones, scam awareness, emergency contacts, and SOS access</li>
+               <li><strong>Cultural Context</strong> — AI-assisted etiquette, dress, and local-custom guidance</li>
+               <li><strong>Travel Comparison</strong> — Search flights, stays, cars, and experiences, then continue with the external provider</li>
+               <li><strong>Smart Packing</strong> — Packing suggestions using destination, forecast, and optional preferences</li>
+               <li><strong>Expense Tracking</strong> — Receipt scanning, currency estimates, and budget tools</li>
+               <li><strong>Camera Translation</strong> — AI-assisted translation for supported menus, signs, and documents</li>
             </ul>
 
             <h2 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>Our Story</h2>
             <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#444', marginBottom: '32px' }}>
-               Guidera was born from the frustration of planning international trips with disconnected tools. Founded by Cyriac Zeh, a passionate traveler and technologist, Guidera is built on a next-generation travel engine trained on billions of real-world travel signals. We&apos;re headquartered in San Diego, California, and serve travelers across 127+ countries.
+               Guidera was born from the frustration of planning international trips with disconnected tools. Founded by Cyriac Zeh, Guidera is developed by Nitrosoft LLC in San Diego, California.
             </p>
 
             <h2 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>Join the Journey</h2>
             <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#444' }}>
-               We&apos;re currently in pre-launch with over 10,000 travelers on our waitlist. Guidera launches in 2026. Join us and be among the first to experience the future of travel.
+               Guidera is preparing its iOS release. Follow the website for current availability and release updates.
             </p>
          </div>
          <Footer />

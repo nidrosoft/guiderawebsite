@@ -1,9 +1,7 @@
 import Footer from "@/layouts/footers/Footer"
 import BlockFeatureTwo from "./BlockFeatureTwo"
-import FancyBanner from "./FancyBanner"
 import FancyBannerTwo from "./FancyBannerTwo"
 import FAQ from "./FAQ"
-import Feedback from "./Feedback"
 import Hero from "./Hero"
 import HowItWorks from "./HowItWorks"
 import Pricing from "./Pricing"
@@ -16,7 +14,6 @@ const Home = () => {
     <div className="main-page-wrapper home-six-bg">
       <Header />
       <Hero />
-      <FancyBanner />
       <Problem />
       <Solution />
       <div id="features">
@@ -24,9 +21,6 @@ const Home = () => {
       </div>
       <div id="how-it-works">
         <HowItWorks />
-      </div>
-      <div id="testimonials">
-        <Feedback />
       </div>
       <div id="pricing">
         <Pricing />

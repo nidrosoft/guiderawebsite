@@ -22,52 +22,35 @@ const pricing_data: DataType[] = [
     id: 1,
     shape: shape,
     shape_class: "shape_01",
-    title: "Explorer",
-    subtitle: "See what Guidera can do",
+    title: "Guidera Free",
+    subtitle: "Explore and try core features",
     price: "Free",
     list: [
-      { icon: check, title: "Explore homepage (all 12 sections)" },
-      { icon: check, title: "Travel deals browsing + saving" },
-      { icon: check, title: "2 AI Trip Snapshots / month" },
+      { icon: check, title: "Browse travel options and destinations" },
       { icon: check, title: "1 active trip" },
-      { icon: check, title: "5 AI Chat messages / day" },
+      { icon: check, title: "1 AI Trip Snapshot (lifetime)" },
+      { icon: check, title: "1 AI Journey Briefing (lifetime)" },
+      { icon: check, title: "5 AI Chat messages (lifetime)" },
+      { icon: check, title: "Core SOS and emergency contacts" },
       { icon: cross, title: "Smart Plan generation" },
       { icon: cross, title: "AI Vision & Translation" },
-      { icon: cross, title: "Trip collaboration" },
+      { icon: cross, title: "Pro collaboration and trip tools" },
     ]
   },
   {
     id: 2,
-    title: "Voyager",
-    subtitle: "Your AI travel companion",
+    title: "Guidera Pro",
+    subtitle: "One entitlement, four billing choices",
     price: "—",
     list: [
-      { icon: check, title: "Everything in Explorer" },
-      { icon: check, title: "Unlimited AI Trip Snapshots" },
-      { icon: check, title: "Smart Plan (3 per month)" },
-      { icon: check, title: "Unlimited AI Chat & Vision" },
-      { icon: check, title: "Trip collaboration (5 people)" },
-      { icon: check, title: "Safety Intelligence & SOS" },
+      { icon: check, title: "Everything in Guidera Free" },
+      { icon: check, title: "AI Trip Snapshots and Journey Briefings" },
+      { icon: check, title: "Smart Plan generation" },
+      { icon: check, title: "AI Chat and AI Vision access" },
+      { icon: check, title: "Trip collaboration" },
       { icon: check, title: "Expense tracking + receipts" },
-      { icon: check, title: "Offline trip data" },
-    ]
-  },
-  {
-    id: 3,
-    shape: shape,
-    shape_class: "shape_02",
-    title: "Navigator",
-    subtitle: "For travelers who never stop",
-    price: "—",
-    list: [
-      { icon: check, title: "Everything in Voyager" },
-      { icon: check, title: "Unlimited Smart Plans" },
       { icon: check, title: "Unlimited active trips" },
-      { icon: check, title: "Collaboration (10 people)" },
-      { icon: check, title: "AI generation priority" },
-      { icon: check, title: "Advanced expense analytics" },
-      { icon: check, title: "Export itinerary (PDF / link)" },
-      { icon: check, title: "Early access to new features" },
+      { icon: check, title: "Synced travel journal" },
     ]
   },
 ];
@@ -83,14 +66,14 @@ const Pricing = () => {
             </div>
           </div>
           <div className="col-xl-4 col-lg-5 ms-auto">
-            <p className="text-white fs-24 md-mt-20">Start free. Upgrade when you&apos;re ready. No hidden fees, cancel anytime.</p>
+            <p className="text-white fs-24 md-mt-20">Start free. Upgrade in the iOS app when you&apos;re ready. Apple manages billing and cancellation.</p>
           </div>
         </div>
 
         <div className="mt-50 lg-mt-20">
           <div className="row gx-xxl-5">
             {pricing_data.map((item) => (
-              <div key={item.id} className="col-lg-4 d-flex mt-35">
+              <div key={item.id} className="col-lg-6 d-flex mt-35">
                 <div className="pr-column w-100 d-flex flex-column">
                   <div className="pr-header text-center">
                     <div className="plane-name fw-bold text-uppercase" style={{ fontSize: '22px', letterSpacing: '2px' }}>{item.title}</div>

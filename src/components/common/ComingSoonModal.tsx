@@ -60,7 +60,7 @@ const ComingSoonModal = ({ isOpen, onClose }: ComingSoonModalProps) => {
                Coming Soon
             </h3>
             <p style={{ color: '#555', fontSize: '16px', lineHeight: 1.6, marginBottom: '24px' }}>
-               The Guidera app is currently being finalized and will be available on the App Store and Google Play very soon. Check back in a few days!
+               Guidera&apos;s current release is being finalized for iOS. Official App Store availability will be posted on guidera.one when confirmed.
             </p>
             <button
                onClick={onClose}

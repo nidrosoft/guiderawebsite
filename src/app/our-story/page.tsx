@@ -20,7 +20,7 @@ const OurStoryPage = () => {
             That&apos;s when the idea hit me: why isn&apos;t there one place that just… knows?
          </p>
          <p>
-            One app that could take a destination, your dates, and your travel style — and give you everything you need to know before you go. Not just bookings. Not just itineraries. A real, intelligent travel companion.
+            One app that could take a destination, your dates, and your travel style — and bring planning, comparison, and destination context together before you go. Travel purchases would still be completed with the provider.
          </p>
          <p>
             That idea became Guidera.
@@ -68,7 +68,7 @@ const OurStoryPage = () => {
             I&apos;m not a &quot;move fast and break things&quot; kind of builder. I&apos;m the kind who researches deeply, architects carefully, and builds to last. So that&apos;s what I did.
          </p>
          <p>
-            I chose React Native as the foundation — not because it was trendy, but because it solved a real problem. I didn&apos;t want to build just for iPhone users. Android users make up the largest mobile audience in the world, and many of them are in regions where a travel companion app matters most. React Native let me build for both platforms from a single codebase, with a component ecosystem and community that was far ahead of alternatives at the time.
+            I chose React Native as the foundation so the product could share a portable architecture. The current public-release work is focused on iOS; an Android release should not be assumed until an official listing is available.
          </p>
          <p>
             I already had deep skills in React and database architecture from my career, so the transition was natural. I picked Supabase for the backend — real-time, PostgreSQL-powered, with edge functions I could deploy without managing servers. The architecture I needed was ambitious, but manageable for one person if I was strategic about it.
@@ -94,7 +94,7 @@ const OurStoryPage = () => {
             AI gave me the conversational travel assistant I&apos;d always envisioned — one that could answer &quot;What should I know before visiting Dubai in Ramadan as a solo female traveler?&quot; with a response that covers dress code, restaurant hours, cultural expectations, safety considerations, and weather — all personalized, all in one place.
          </p>
          <p>
-            I integrated Anthropic&apos;s Claude as the AI backbone. I engineered an entire prompt architecture — eleven specialized prompts organized across three layers, firing in parallel to generate trip intelligence in seconds. I built context-aware systems that feed the AI your full trip profile so every response is tailored, not generic.
+            I built an AI-provider architecture that can use supported business APIs for different tasks and fallbacks. The system supplies only the context needed for a requested feature, and the Privacy Policy identifies the current provider categories and data involved.
          </p>
          <p>
             The years of architectural groundwork suddenly had an engine worthy of the chassis.
@@ -102,19 +102,19 @@ const OurStoryPage = () => {
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>What Guidera Is Today</h2>
          <p>
-            Guidera is the travel companion I wished existed when I was planning that first trip in 2014. It brings together everything a traveler needs — before, during, and after a trip — into one intelligent platform.
+            Guidera is the travel companion I wished existed when I was planning that first trip in 2014. It brings planning, comparison, and destination context into one product.
          </p>
          <p>
             <strong>AI Trip Intelligence:</strong> Tell Guidera where you&apos;re going, and it generates a complete destination preview — weather, costs, safety, cultural guidance, visa requirements, local laws, what to pack, what to wear, dos and don&apos;ts, emergency contacts, and more. You choose what you want to see. No information overload. No digging through ten apps.
          </p>
          <p>
-            <strong>Search and Compare:</strong> Flights, hotels, car rentals, and experiences from multiple providers — compared side by side. When you&apos;re ready to book, you go directly to the provider. No middleman markup.
+            <strong>Search and Compare:</strong> Flights, hotels, car rentals, and experiences from available providers — compared in Guidera. When you&apos;re ready to purchase, you go directly to the provider to verify the final price and terms.
          </p>
          <p>
-            <strong>Community and Local Guides:</strong> Verified local guides who can show you the real version of their city. Vetted through identity verification, built on a trust system of reviews and vouches. Travelers connecting with travelers.
+            <strong>Community and Local Guides:</strong> Traveler community tools and a Local Guide application path. Identity verification is not a background check, professional-license check, endorsement, or safety guarantee.
          </p>
          <p>
-            <strong>Safety Intelligence:</strong> Real-time safety assessments, scam awareness, neighborhood guides, emergency contacts, and cultural etiquette — powered by AI and updated continuously.
+            <strong>Safety Context:</strong> Informational safety zones, scam awareness, neighborhood context, emergency contacts, and cultural guidance. Guidera does not continuously monitor travelers or replace emergency services.
          </p>
          <p>
             <strong>Expense Tracking:</strong> Scan receipts, track spending by category, and stay on budget — all within the same app where you planned your trip.
@@ -139,16 +139,16 @@ const OurStoryPage = () => {
 
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>What&apos;s Next</h2>
          <p>
-            Guidera is live. It&apos;s on the App Store and Google Play. And it&apos;s just getting started.
+            Guidera&apos;s current release work is focused on iOS. Official availability will be listed on guidera.one when confirmed.
          </p>
          <p>
-            The roadmap is deep — group trip planning, voice assistant, flight compensation claims, deeper community features, more AI intelligence layers. Every week, the app gets smarter and more capable.
+            The roadmap includes continued improvements to planning, collaboration, community, and AI-assisted travel tools. Roadmap items are not promises of current availability.
          </p>
          <p>
             But the mission hasn&apos;t changed since 2014: <strong>no traveler should ever feel unprepared.</strong>
          </p>
          <p>
-            Whether you&apos;re visiting a new country for the first time or you&apos;re a seasoned traveler looking for a smarter way to plan — Guidera is the companion that gives you the full picture before you go, and stays with you the whole way.
+            Whether you&apos;re visiting a new country for the first time or you&apos;re a seasoned traveler looking for a more organized way to plan, Guidera is designed to provide useful context before and during a trip.
          </p>
          <p>
             Welcome to Guidera. I&apos;m glad you&apos;re here.

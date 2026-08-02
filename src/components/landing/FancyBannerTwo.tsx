@@ -5,7 +5,6 @@ import ComingSoonModal from "@/components/common/ComingSoonModal"
 
 import img_1 from "@/assets/images/shape/shape_59.svg"
 import img_2 from "@/assets/images/icon/apple.svg"
-import img_3 from "@/assets/images/icon/playstore.svg"
 
 const FancyBannerTwo = () => {
    const [showComingSoon, setShowComingSoon] = useState(false)
@@ -52,7 +51,7 @@ const FancyBannerTwo = () => {
                         <h2>Ready to travel smarter?</h2>
                      </div>
                      <p className="fs-28 mt-40 lg-mt-30 mb-20 lg-mb-20">
-                        Join 10,000+ travelers who&apos;ve discovered a better way.
+                        Follow Guidera&apos;s iOS release updates.
                      </p>
 
                      <div className="d-flex align-items-center justify-content-center flex-wrap platform-button-group mb-30">
@@ -61,13 +60,6 @@ const FancyBannerTwo = () => {
                            <div>
                               <span>Download on the</span>
                               <strong>App Store</strong>
-                           </div>
-                        </button>
-                        <button onClick={() => setShowComingSoon(true)} className="d-flex align-items-center windows-button" style={{ cursor: 'pointer' }}>
-                           <Image src={img_3} alt="" className="icon" />
-                           <div>
-                              <span>Get it on</span>
-                              <strong>Google Play</strong>
                            </div>
                         </button>
                      </div>
@@ -92,7 +84,7 @@ const FancyBannerTwo = () => {
                               <input
                                  type="email"
                                  name="email"
-                                 placeholder="Enter your email for early access"
+                                 placeholder="Enter your email for release updates"
                                  required
                                  style={{
                                     flex: 1,

@@ -4,10 +4,8 @@ import Image from "next/image"
 import ComingSoonModal from "@/components/common/ComingSoonModal"
 
 import heroPhone from "@/assets/images/assets/guidera_hero_phone.png"
-import avatarImg from "@/assets/images/assets/avatar.png"
 import img_6 from "@/assets/images/assets/bg_09.png"
 import appleIcon from "@/assets/images/icon/apple.svg"
-import playstoreIcon from "@/assets/images/icon/playstore.svg"
 
 const floatingWidgetStyle: React.CSSProperties = {
    position: 'absolute',
@@ -55,12 +53,12 @@ const Hero = () => {
                         opacity: animReady ? 1 : 0,
                         transform: animReady ? 'translateY(0)' : 'translateY(30px)',
                         transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
-                     }}>Your entire trip <span>before you even</span> plan it.</h1>
+                     }}>Plan with context <span>before you go.</span></h1>
                      <p className="hero-description fs-24 pt-35 pb-20 pe-xxl-5" style={{
                         opacity: animReady ? 1 : 0,
                         transform: animReady ? 'translateY(0)' : 'translateY(30px)',
                         transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s',
-                     }}>Guidera runs on a next generation travel engine  purpose built, trained on billions of real world travel signals. It handles your entire trip: a personalized day-by-day itinerary, cultural insights, real-time safety alerts, and a packing list that adapts to your profession, your health, and the forecast.</p>
+                     }}>Guidera uses AI and travel-provider data to help you build itineraries, compare travel options, understand destination context, organize expenses, and prepare a personalized packing list. Important AI, safety, visa, and provider information should always be verified with primary sources.</p>
 
                      {/* Phone illustration inline for mobile ordering */}
                      <div className="hero-mobile-phone d-md-none" style={{
@@ -84,24 +82,6 @@ const Hero = () => {
                               <strong>App Store</strong>
                            </div>
                         </button>
-                        <button type="button" onClick={() => setShowComingSoon(true)} className="d-flex align-items-center windows-button mt-10" style={{ cursor: 'pointer' }}>
-                           <Image src={playstoreIcon} alt="" className="icon" />
-                           <div>
-                              <span>Get it on</span>
-                              <strong>Google Play</strong>
-                           </div>
-                        </button>
-                     </div>
-
-                     <div className="d-flex align-items-center hero-traveler-count mt-75 md-mt-40" style={{
-                        opacity: animReady ? 1 : 0,
-                        transform: animReady ? 'translateY(0)' : 'translateY(20px)',
-                        transition: 'opacity 0.8s ease-out 1.1s, transform 0.8s ease-out 1.1s',
-                     }}>
-                        <Image src={avatarImg} alt="Waitlist members" />
-                        <div className="rating">
-                           <div className="fw-500 text-dark fs-20">&#10022; 10,847 travelers waiting &middot; Launching in May 2026</div>
-                        </div>
                      </div>
                   </div>
                </div>
@@ -128,12 +108,12 @@ const Hero = () => {
 
                <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, top: '12%', right: '8%', animation: 'jumpTwo 6s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>🌍</span>
-                  <span>127 Countries</span>
+                  <span>Destination Context</span>
                </div>
 
                <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, bottom: '30%', right: '3%', animation: 'jumpThree 4.5s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>🛡️</span>
-                  <span>Safety Alerts On</span>
+                  <span>Safety Information</span>
                   <span style={{ ...tealDot, background: '#3FC39E' }}></span>
                </div>
 

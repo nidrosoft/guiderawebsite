@@ -9,7 +9,8 @@ import logo_1 from "@/assets/images/logo/guideralogo.png";
 const navLinks = [
    { label: "Features", href: "/#features" },
    { label: "How It Works", href: "/#how-it-works" },
-   { label: "Testimonials", href: "/#testimonials" },
+   { label: "Pricing", href: "/pricing" },
+   { label: "Support", href: "/support" },
 ]
 
 interface HeaderProps {
