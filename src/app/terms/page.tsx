@@ -28,7 +28,8 @@ const TermsPage = () => {
             applicable law provides otherwise.
          </p>
          <p>
-            You may permanently delete your account in the app at Profile &gt; Settings &gt; Account
+            <strong>Account termination.</strong> You may permanently delete your account in the app
+            at Profile &gt; Settings &gt; Account
             &gt; Delete Account. The server-authoritative deletion process and any limited legal or
             security retention are described in our <Link href="/delete-account">account-deletion
             instructions</Link> and <Link href="/privacy">Privacy Policy</Link>. Deleting your
