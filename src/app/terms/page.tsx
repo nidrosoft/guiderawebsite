@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const TermsPage = () => {
    return (
-      <LegalPageLayout title="Terms of Service" lastUpdated="August 1, 2026">
+      <LegalPageLayout title="Terms of Service" lastUpdated="August 10, 2026">
          <p>
             These Terms of Service (&quot;Terms&quot;) govern your access to Guidera, including the iOS
             application, guidera.one, and related services (the &quot;Service&quot;). The Service is
@@ -19,7 +19,7 @@ const TermsPage = () => {
             Terms. If you do not agree, do not use the Service.
          </p>
 
-         <h2>1. Eligibility and Accounts</h2>
+         <h2>1. Eligibility, Accounts, and Account Termination</h2>
          <p>
             You must be at least 18 years old and legally able to enter these Terms. You agree to
             provide accurate account information, protect your sign-in methods, and promptly notify
@@ -61,7 +61,8 @@ const TermsPage = () => {
 
          <h2>4. Guidera Pro Subscriptions</h2>
          <p>
-            Guidera Pro is a digital subscription purchased through Apple In-App Purchase. The
+            Guidera Pro is a digital subscription purchased through the Apple App Store using
+            Apple In-App Purchase. The
             paywall displays the current product, billing duration, trial eligibility when supplied
             by Apple, renewal price, and included entitlement. Unless cancelled at least 24 hours
             before renewal or as otherwise stated by Apple, a subscription renews automatically and
