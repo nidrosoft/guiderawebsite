@@ -279,9 +279,9 @@ const groups: FeatureGroup[] = [
 ];
 
 const quickFacts = [
-  { icon: MagicStar, value: "8", label: "Smart Trip modules" },
-  { icon: Camera, value: "Live", label: "AI vision and voice" },
-  { icon: Airplane, value: "24/7", label: "Flight monitoring" },
+  { icon: MagicStar, value: "Prepare", label: "Plans, packing, documents" },
+  { icon: Camera, value: "Explore", label: "Live guidance and local tools" },
+  { icon: Airplane, value: "Protect", label: "Flights, expenses, and claims" },
 ];
 
 const accessLabel: Record<Access, string> = {
