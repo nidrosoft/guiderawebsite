@@ -61,7 +61,8 @@ const TermsPage = () => {
 
          <h2>4. Guidera Pro Subscriptions</h2>
          <p>
-            Guidera Pro is a digital subscription purchased through Apple In-App Purchase. The
+            Guidera Pro is a digital subscription purchased through the Apple App Store using
+            Apple In-App Purchase. The
             paywall displays the current product, billing duration, trial eligibility when supplied
             by Apple, renewal price, and included entitlement. Unless cancelled at least 24 hours
             before renewal or as otherwise stated by Apple, a subscription renews automatically and
@@ -178,7 +179,7 @@ const TermsPage = () => {
             responsible for their content, availability, security, decisions, or performance.
          </p>
 
-         <h2>13. Suspension and Termination</h2>
+         <h2>13. Account termination, Suspension, and Access</h2>
          <p>
             We may restrict, suspend, or terminate access, remove content, or preserve relevant
             records when reasonably necessary to enforce these Terms, protect users, prevent abuse,
