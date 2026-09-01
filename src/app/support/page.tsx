@@ -254,7 +254,7 @@ const SupportPage = () => {
                </Link>
                {" · "}
                <a
-                  href="https://apps.apple.com/us/search?term=Guidera"
+                  href="https://apps.apple.com/us/app/guidera/id6760977450"
                   style={LINK}
                   target="_blank"
                   rel="noopener noreferrer"

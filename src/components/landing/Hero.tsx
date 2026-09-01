@@ -1,13 +1,12 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, type CSSProperties } from "react"
 import Image from "next/image"
-import ComingSoonModal from "@/components/common/ComingSoonModal"
+import StoreButtons from "@/components/common/StoreButtons"
 
 import heroPhone from "@/assets/images/assets/guidera_hero_phone.png"
 import img_6 from "@/assets/images/assets/bg_09.png"
-import appleIcon from "@/assets/images/icon/apple.svg"
 
-const floatingWidgetStyle: React.CSSProperties = {
+const floatingWidgetStyle: CSSProperties = {
    position: 'absolute',
    zIndex: 3,
    background: '#fff',
@@ -23,7 +22,7 @@ const floatingWidgetStyle: React.CSSProperties = {
    whiteSpace: 'nowrap' as const,
 }
 
-const tealDot: React.CSSProperties = {
+const tealDot: CSSProperties = {
    width: '8px',
    height: '8px',
    borderRadius: '50%',
@@ -32,7 +31,6 @@ const tealDot: React.CSSProperties = {
 }
 
 const Hero = () => {
-   const [showComingSoon, setShowComingSoon] = useState(false)
    const [phoneLoaded, setPhoneLoaded] = useState(false)
    const [animReady, setAnimReady] = useState(false)
 
@@ -43,7 +41,6 @@ const Hero = () => {
    }, [])
 
    return (
-      <>
       <div className="hero-banner-six z-1 position-relative">
          <div className="wrapper position-relative z-1 pt-250 xl-pt-200 md-pt-150 pb-180 xl-pb-100 lg-pb-50">
             <div className="container">
@@ -60,7 +57,6 @@ const Hero = () => {
                         transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s',
                      }}>Guidera uses AI and travel-provider data to help you build itineraries, compare travel options, understand destination context, organize expenses, and prepare a personalized packing list. Important AI, safety, visa, and provider information should always be verified with primary sources.</p>
 
-                     {/* Phone illustration inline for mobile ordering */}
                      <div className="hero-mobile-phone d-md-none" style={{
                         opacity: animReady ? 1 : 0,
                         transform: animReady ? 'scale(1) translateY(0)' : 'scale(0.7) translateY(60px)',
@@ -69,19 +65,12 @@ const Hero = () => {
                         <Image src={heroPhone} alt="Guidera App" style={{ width: '95%', maxWidth: '380px', height: 'auto', margin: '0 auto', display: 'block' }} />
                      </div>
 
-                     <div className="d-flex align-items-center flex-wrap platform-button-group hero-buttons" style={{
-                        gap: '10px',
+                     <div style={{
                         opacity: animReady ? 1 : 0,
                         transform: animReady ? 'translateY(0)' : 'translateY(20px)',
                         transition: 'opacity 0.8s ease-out 0.9s, transform 0.8s ease-out 0.9s',
                      }}>
-                        <button type="button" onClick={() => setShowComingSoon(true)} className="d-flex align-items-center ios-button mt-10" style={{ cursor: 'pointer' }}>
-                           <Image src={appleIcon} alt="" className="icon" />
-                           <div>
-                              <span>Download on the</span>
-                              <strong>App Store</strong>
-                           </div>
-                        </button>
+                        <StoreButtons buttonClassName="mt-10" className="hero-buttons" />
                      </div>
                   </div>
                </div>
@@ -94,7 +83,6 @@ const Hero = () => {
             }}>
                <Image src={heroPhone} alt="Guidera App" className="w-100" style={{ maxWidth: '680px', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
 
-               {/* Floating travel widgets - hidden on mobile via CSS */}
                <div className="d-none d-lg-flex" style={{ ...floatingWidgetStyle, top: '12%', left: '-14%', animation: 'jumpTwo 4s infinite linear' }}>
                   <span style={{ fontSize: '18px' }}>✈️</span>
                   <span>Flight Tracked</span>
@@ -126,8 +114,6 @@ const Hero = () => {
             <Image src={img_6} alt="" className="shapes bg-shape" />
          </div>
       </div>
-      <ComingSoonModal isOpen={showComingSoon} onClose={() => setShowComingSoon(false)} />
-      </>
    )
 }
 
