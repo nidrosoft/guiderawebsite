@@ -9,10 +9,10 @@ import { IUBENDA } from "@/lib/iubenda"
 export const metadata: Metadata = {
   metadataBase: new URL("https://guidera.one"),
   title: {
-    default: "Guidera — AI-Assisted Travel Planning for iOS",
+    default: "Guidera — Plan Smarter. Travel Safer.",
     template: "%s | Guidera",
   },
-  description: "Guidera is an AI-assisted iOS travel app for trip planning, travel search and comparison, destination context, packing, expenses, and traveler community features.",
+  description: "Plan trips around your preferences, pack with confidence, prepare travel documents, understand local do's and don'ts, stay safety-aware, and track flight compensation in one iOS app.",
   keywords: [
     "AI travel app",
     "AI trip planner",
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "travel safety information",
     "cultural travel guide",
     "packing list app",
+    "travel document planner",
+    "flight compensation tracker",
     "travel community",
     "AI travel assistant",
     "trip planning app",
@@ -48,21 +50,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://guidera.one",
     siteName: "Guidera",
-    title: "Guidera — AI-Assisted Travel Planning for iOS",
-    description: "An AI-assisted iOS travel app for itineraries, travel comparison, destination context, packing, expenses, and traveler community features.",
+    title: "Guidera — Plan Smarter. Travel Safer.",
+    description: "Personalized planning, smarter packing, document preparation, local guidance, travel safety, and flight compensation tracking in one iOS app.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Guidera — AI Travel App",
+        alt: "Guidera helps travelers plan, pack, prepare documents, stay safety-aware, and track flight compensation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guidera — AI-Assisted Travel Planning for iOS",
-    description: "An AI-assisted iOS travel app for planning, comparison, and destination context.",
+    title: "Guidera — Plan Smarter. Travel Safer.",
+    description: "Plan around your preferences, pack and prepare, get local safety guidance, and track flight compensation.",
     images: ["/og-image.png"],
     creator: "@guideraapp",
   },

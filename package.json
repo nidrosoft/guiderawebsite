@@ -31,7 +31,7 @@
     "yup": "^1.4.0"
   },
   "engines": {
-    "node": "24.x"
+    "node": "22.x"
   },
   "devDependencies": {
     "@types/isotope-layout": "^3.0.14",

@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="footer-nav mb-20">
                   <h6 className="footer-title" style={{ fontSize: '15px', fontWeight: 700, marginBottom: '12px' }}>Product</h6>
                   <ul className="footer-nav-link style-none">
-                    <li><Link href="/#features">Features</Link></li>
+                    <li><Link href="/feature-breakdown">Features</Link></li>
                     <li><Link href="/pricing">Pricing</Link></li>
                     <li><Link href="/#how-it-works">How It Works</Link></li>
                     <li><Link href="/#faq">FAQ</Link></li>

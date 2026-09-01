@@ -7,7 +7,7 @@ import UseSticky from "@/hooks/UseSticky"
 import logo_1 from "@/assets/images/logo/guideralogo.png";
 
 const navLinks = [
-   { label: "Features", href: "/#features" },
+   { label: "Features", href: "/feature-breakdown" },
    { label: "How It Works", href: "/#how-it-works" },
    { label: "Pricing", href: "/pricing" },
    { label: "Support", href: "/support" },

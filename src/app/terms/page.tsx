@@ -180,7 +180,7 @@ const TermsPage = () => {
             responsible for their content, availability, security, decisions, or performance.
          </p>
 
-         <h2>13. Suspension and Termination</h2>
+         <h2>13. Account termination, Suspension, and Access</h2>
          <p>
             We may restrict, suspend, or terminate access, remove content, or preserve relevant
             records when reasonably necessary to enforce these Terms, protect users, prevent abuse,

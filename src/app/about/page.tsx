@@ -39,9 +39,13 @@ const AboutPage = () => {
                Guidera was born from the frustration of planning international trips with disconnected tools. Founded by Cyriac Zeh, Guidera is developed by Nitrosoft LLC in San Diego, California.
             </p>
 
-            <h2 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>Join the Journey</h2>
+            <h2 style={{ fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>Get the app</h2>
             <p style={{ fontSize: '16px', lineHeight: 1.8, color: '#444' }}>
-               Guidera is preparing its iOS release. Follow the website for current availability and release updates.
+               Guidera is available on{" "}
+               <a href="https://apps.apple.com/us/app/guidera/id6760977450" style={{ color: '#3FC39E', fontWeight: 600 }} target="_blank" rel="noopener noreferrer">
+                  the App Store
+               </a>
+               .
             </p>
          </div>
          <Footer />

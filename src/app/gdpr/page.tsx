@@ -22,7 +22,7 @@ const GDPRPage = () => {
          <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', marginTop: '32px', color: '#000' }}>3. Legal Basis for Processing</h2>
          <p>We process personal data based on the following legal grounds:</p>
          <ul style={{ paddingLeft: '20px', marginBottom: '16px' }}>
-            <li><strong>Consent:</strong> When you sign up for our waitlist or opt in to communications</li>
+            <li><strong>Consent:</strong> When you create an account or opt in to communications</li>
             <li><strong>Contract:</strong> When processing is necessary to provide the Service you requested</li>
             <li><strong>Legitimate Interest:</strong> For analytics, security, and improving the Service</li>
          </ul>
