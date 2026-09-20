@@ -18,25 +18,25 @@ const platformCopy: Record<
 > = {
   all: {
     path: "/download",
-    title: "Download Guidera — Plan Smarter. Travel Safer.",
+    title: "Download Guidera: AI Trip Planner for iOS & Android",
     description:
-      "Get Guidera, the intelligent travel companion, for iPhone, iPad, or Android.",
+      "Get Guidera for personalized AI itineraries, booking organization, flight guidance, packing, expenses, travel safety, and language tools.",
     image: "/og-image.png",
     imageAlt: "Guidera — Plan smarter. Travel safer.",
   },
   ios: {
     path: "/download/ios",
-    title: "Guidera for iPhone and iPad — Plan Smarter. Travel Safer.",
+    title: "Guidera AI Trip Planner for iPhone & iPad",
     description:
-      "Download Guidera from the App Store and bring planning, packing, destination context, and travel tools together.",
+      "Download Guidera from the App Store for AI itineraries, booking imports, flight guidance, packing lists, expenses, travel safety, and language tools.",
     image: "/og-image.png",
     imageAlt: "Download Guidera on the App Store — Plan smarter. Travel safer.",
   },
   android: {
     path: "/download/android",
-    title: "Guidera for Android — Plan Smarter. Travel Safer.",
+    title: "Guidera AI Trip Planner for Android",
     description:
-      "Join Guidera for Android on Google Play while the app is in closed testing.",
+      "Join Guidera for Android on Google Play while the AI trip planner is in closed testing.",
     image: "/og-image-android.png",
     imageAlt: "Get Guidera on Google Play — Plan smarter. Travel safer.",
   },

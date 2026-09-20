@@ -4,6 +4,7 @@ import LegalPageLayout from "@/components/common/LegalPageLayout"
 export const metadata: Metadata = {
    title: "Our Story — Guidera",
    description: "From a $50 crowdfunding campaign to an AI-powered travel companion — the story of how Guidera was built by one person who refused to let a good idea die.",
+   alternates: { canonical: "https://guidera.one/our-story" },
 }
 
 const OurStoryPage = () => {

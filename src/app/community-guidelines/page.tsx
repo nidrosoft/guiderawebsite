@@ -4,6 +4,7 @@ import LegalPageLayout from "@/components/common/LegalPageLayout"
 export const metadata: Metadata = {
    title: "Community Guidelines — Guidera",
    description: "Our community standards for keeping Guidera safe, welcoming, and useful for travelers worldwide.",
+   alternates: { canonical: "https://guidera.one/community-guidelines" },
 }
 
 const CommunityGuidelinesPage = () => {

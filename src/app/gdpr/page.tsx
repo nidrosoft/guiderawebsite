@@ -4,6 +4,7 @@ import LegalPageLayout from "@/components/common/LegalPageLayout"
 export const metadata: Metadata = {
    title: "GDPR — Guidera",
    description: "Learn about your rights under the General Data Protection Regulation (GDPR) with Guidera.",
+   alternates: { canonical: "https://guidera.one/gdpr" },
 }
 
 const GDPRPage = () => {

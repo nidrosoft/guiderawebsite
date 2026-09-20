@@ -5,6 +5,7 @@ import Footer from "@/layouts/footers/Footer"
 export const metadata: Metadata = {
    title: "About Us — Guidera",
    description: "Learn about Guidera, the next-generation travel platform built for modern travelers.",
+   alternates: { canonical: "https://guidera.one/about" },
 }
 
 const AboutPage = () => {
